@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sua loja</title>
+<link rel="stylesheet" href="assets/sim.css">
+<link rel="stylesheet" href="assets/loja.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></g></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g></symbol>
+<symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 13H6Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></g></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M2 6h11v10H2ZM13 9h4.5L21 12.5V16h-8Z"/><circle cx="6" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></g></symbol>
+<symbol id="i-card" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6 15h4"/></g></symbol>
+<symbol id="i-pix" viewBox="0 0 24 24"><path d="M12 2.8 21.2 12 12 21.2 2.8 12Z M7.5 9.5l2.3 2.3a3 3 0 0 0 4.3 0l2.4-2.3M7.5 14.5l2.3-2.3a3 3 0 0 1 4.3 0l2.4 2.3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h13l-3-3M20 16H7l3 3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+<symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5.5 12.5 4 4 9-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1-4.5-4.2 6.1-.8Z" fill="currentColor"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></g></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<div class="ann" role="region" aria-label="Avisos da loja"><div class="ann-track" id="ann"><p class="is-on"><b>FRETE GRÁTIS</b> nas compras acima de R$ 299</p><p><b>6x SEM JUROS</b> no cartão de crédito</p><p><b>10% OFF</b> pagando com Pix</p></div></div>
+
+<header class="hd" id="hd">
+<div class="wrap hd-row">
+<button class="icon-btn hd-burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Categorias"><svg><use href="#i-menu"/></svg></button>
+<a class="logo" href="#/" aria-label="Sua loja, início">Sua loja<i aria-hidden="true">.</i></a>
+<form class="search" id="search" role="search" action="#/busca" autocomplete="off"><label class="sr-only" for="q">Buscar produtos</label><svg aria-hidden="true"><use href="#i-search"/></svg><input id="q" name="q" type="search" placeholder="O que você está procurando?" aria-controls="sugg" aria-autocomplete="list"><div class="sugg" id="sugg" hidden></div></form>
+<nav class="hd-icons" aria-label="Atalhos"><a class="icon-btn" href="#/conta" aria-label="Minha conta"><svg><use href="#i-user"/></svg></a><button class="icon-btn cart-btn" id="cart-btn" type="button" aria-controls="cart" aria-expanded="false"><svg aria-hidden="true"><use href="#i-bag"/></svg><span class="sr-only">Carrinho, </span><b class="cart-count" id="cart-count" aria-live="polite">0</b><span class="sr-only"> itens</span></button></nav>
+</div>
+<nav class="cats wrap" aria-label="Categorias"><a href="#/" data-nav="/">Início</a><a href="#/casa" data-nav="/casa">Casa</a><a href="#/cozinha" data-nav="/cozinha">Cozinha</a><a href="#/acessorios" data-nav="/acessorios">Acessórios</a><a href="#/ofertas" data-nav="/ofertas" class="sale">Ofertas</a></nav>
+</header>
+
+<main id="main">
+<!-- início -->
+<div class="page" data-route="/" data-title="Início">
+<section class="slider" aria-roledescription="carrossel" aria-label="Destaques">
+<div class="slides" id="slides">
+<div class="slide s1 is-on" role="group" aria-roledescription="slide" aria-label="1 de 2"><div class="wrap slide-in"><div class="slide-copy"><p class="kick">E-commerce</p><h1 class="display">Catálogo que vende. Checkout que não trava.</h1><p>Cada etapa entre a vitrine e o pedido é um ponto onde a venda pode se perder. A loja é desenhada para tirar atrito de todas elas.</p><a class="btn btn-dark btn-lg" href="#/todos">Ver produtos</a></div><div class="slide-art" data-hero="garrafa-termica,caneca,vela"></div></div></div>
+<div class="slide s2" role="group" aria-roledescription="slide" aria-label="2 de 2" hidden><div class="wrap slide-in"><div class="slide-copy"><p class="kick">Semana da casa</p><h2 class="display">Até 25% OFF em peças para casa.</h2><p>Vela, vaso, luminária e tudo o que deixa o ambiente do seu jeito.</p><a class="btn btn-dark btn-lg" href="#/ofertas">Aproveitar ofertas</a></div><div class="slide-art" data-hero="vaso,luminaria,potes"></div></div></div>
+</div>
+<div class="slider-ctl wrap"><button class="icon-btn" type="button" id="sl-prev" aria-label="Destaque anterior"><svg><use href="#i-left"/></svg></button><div class="dots" role="group" aria-label="Escolher destaque"><button type="button" aria-label="Destaque 1" aria-current="true"></button><button type="button" aria-label="Destaque 2"></button></div><button class="icon-btn" type="button" id="sl-next" aria-label="Próximo destaque"><svg><use href="#i-right"/></svg></button></div>
+</section>
+<ul class="perks wrap" role="list"><li><svg aria-hidden="true"><use href="#i-truck"/></svg><div><b>Frete grátis</b><span>acima de R$ 299</span></div></li><li><svg aria-hidden="true"><use href="#i-card"/></svg><div><b>6x sem juros</b><span>no cartão de crédito</span></div></li><li><svg aria-hidden="true"><use href="#i-pix"/></svg><div><b>10% OFF no Pix</b><span>desconto automático</span></div></li><li><svg aria-hidden="true"><use href="#i-swap"/></svg><div><b>Troca grátis</b><span>em até 30 dias</span></div></li></ul>
+<section class="wrap block"><h2 class="block-t">Compre por categoria</h2><ul class="catgrid" role="list" id="catgrid"></ul></section>
+<section class="wrap block"><div class="block-hd"><h2 class="block-t">Mais vendidos</h2><a class="more" href="#/todos">Ver todos</a></div><ul class="grid" role="list" id="home-grid"></ul></section>
+<section class="news-band"><div class="wrap news-in"><div><h2 class="display">Ganhe 10% na primeira compra.</h2><p>Cadastre seu e-mail e receba o cupom agora.</p></div><form class="news" id="news"><label class="sr-only" for="news-email">Seu e-mail</label><input class="input" id="news-email" type="email" required placeholder="Seu melhor e-mail"><button class="btn btn-dark" type="submit">Quero o cupom</button></form><div class="coupon-box" id="coupon-box" hidden tabindex="-1"><span>Seu cupom:</span><code>BEMVINDO10</code><button class="btn btn-sm btn-light" type="button" id="copy-coupon"><svg><use href="#i-copy"/></svg>Copiar</button></div></div></section>
+</div>
+
+<!-- categoria / busca -->
+<div class="page" data-route="/busca" data-title="Busca" hidden><div class="wrap listing"><div class="listing-hd"><h1 class="display" id="search-title">Busca</h1><p class="muted" id="search-count" aria-live="polite"></p></div><ul class="grid" role="list" id="search-grid"></ul><div class="empty" id="search-empty" hidden><p class="empty-t">Nenhum produto encontrado.</p><p class="muted">Tente outra palavra, como “caneca” ou “vela”.</p><a class="btn btn-dark" href="#/todos">Ver todos os produtos</a></div></div></div>
+
+<!-- produto -->
+<div class="page" data-route="/p/:id" data-title="Produto" hidden><div class="wrap" id="pdp"></div></div>
+
+<!-- checkout -->
+<div class="page" data-route="/checkout" data-title="Checkout" hidden><div class="wrap" id="checkout"></div></div>
+<div class="page" data-route="/pedido/:n" data-title="Pedido confirmado" hidden><div class="wrap" id="order"></div></div>
+
+<!-- conta -->
+<div class="page" data-route="/conta" data-title="Minha conta" hidden><div class="wrap account" id="account"></div></div>
+
+<!-- trocas -->
+<div class="page" data-route="/trocas" data-title="Trocas e devoluções" hidden><div class="wrap text-page"><h1 class="display">Trocas e devoluções</h1><p>Você pode trocar ou devolver qualquer produto em até 30 dias após o recebimento, sem custo.</p><h2>Como solicitar</h2><p>Acesse <a class="link" href="#/conta">Minha conta</a>, escolha o pedido e clique em “Solicitar troca”. Enviamos a etiqueta de postagem por e-mail.</p><h2>Reembolso</h2><p>No Pix, o valor volta em até 2 dias úteis. No cartão, o estorno aparece em até duas faturas.</p></div></div>
+
+<div class="page" data-route="/:cat" data-title="Categoria" hidden><div class="wrap listing"><nav class="crumbs" aria-label="Você está em" id="cat-crumbs"></nav><div class="listing-hd"><h1 class="display" id="cat-title"></h1><p class="muted" id="cat-count" aria-live="polite"></p></div><div class="toolbar"><div class="chips" role="group" aria-label="Categorias" id="cat-chips"></div><label class="sort"><span>Ordenar por</span><select class="select" id="sort"><option value="rel">Mais vendidos</option><option value="asc">Menor preço</option><option value="desc">Maior preço</option><option value="az">A–Z</option></select></label></div><ul class="grid" role="list" id="cat-grid"></ul></div></div>
+
+<div class="page" data-route="*" data-title="Página não encontrada" hidden><div class="wrap empty page-empty"><p class="empty-t">Página não encontrada.</p><a class="btn btn-dark" href="#/">Voltar à loja</a></div></div>
+</main>
+
+<footer class="ft" id="ft"><div class="wrap">
+<div class="ft-top">
+<div><a class="logo" href="#/">Sua loja<i aria-hidden="true">.</i></a><p>Peças para casa, cozinha e dia a dia, feitas para durar.</p></div>
+<nav aria-label="Categorias no rodapé"><h2>Categorias</h2><a href="#/casa">Casa</a><a href="#/cozinha">Cozinha</a><a href="#/acessorios">Acessórios</a><a href="#/ofertas">Ofertas</a></nav>
+<nav aria-label="Ajuda"><h2>Ajuda</h2><a href="#/conta">Minha conta</a><a href="#/trocas">Trocas e devoluções</a><a href="#/conta">Meus pedidos</a></nav>
+<div><h2>Atendimento</h2><p>(11) 90000-0000</p><p>sac@sualoja.com.br</p><p>Seg. a sex., 9h às 18h</p></div>
+</div>
+<div class="ft-pay"><div><h2>Formas de pagamento</h2><ul role="list" class="pay"><li>Pix</li><li>Crédito</li><li>Débito</li><li>Boleto</li></ul></div><div><h2>Site seguro</h2><p class="secure"><svg aria-hidden="true"><use href="#i-lock"/></svg>Compra protegida · SSL</p></div></div>
+<p class="ft-bot">© 2026 Sua loja · CNPJ 00.000.000/0001-00 · Simulação de loja virtual.</p>
+</div></footer>
+
+<!-- menu mobile -->
+<div class="drawer drawer-left" id="menu" aria-label="Categorias" role="dialog"><div class="drawer-hd"><b>Categorias</b><button class="icon-btn" type="button" data-close="menu" aria-label="Fechar"><svg><use href="#i-x"/></svg></button></div><nav class="menu-l"><a href="#/">Início</a><a href="#/casa">Casa</a><a href="#/cozinha">Cozinha</a><a href="#/acessorios">Acessórios</a><a href="#/ofertas" class="sale">Ofertas</a><a href="#/conta">Minha conta</a><a href="#/trocas">Trocas e devoluções</a></nav></div>
+<!-- carrinho -->
+<div class="drawer" id="cart" aria-label="Carrinho de compras" role="dialog"><div class="drawer-hd"><b>Carrinho de compras</b><button class="icon-btn" type="button" data-close="cart" aria-label="Fechar carrinho"><svg><use href="#i-x"/></svg></button></div><div class="cart-body" id="cart-body"></div></div>
+<div class="scrim" id="scrim" hidden></div>
+
+<script src="assets/sim.js"></script>
+<script src="assets/loja.js?v=20260927-1"></script>
+</body>
+</html>

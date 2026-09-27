@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.vercel/
+.env*
+!.env.example
+*.sqlite
+*.sqlite-*
+media/
+payload-types.ts
+next-env.d.ts
+tsconfig.tsbuildinfo
+src/templates/generated.ts

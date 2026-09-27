@@ -1,0 +1,45 @@
+{
+  "name": "thiago-barreto-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/sync-templates.mjs",
+    "dev": "next dev --port 3000",
+    "prebuild": "node scripts/sync-templates.mjs",
+    "build": "next build",
+    "start": "next start --port 3000",
+    "pretypecheck": "node scripts/sync-templates.mjs",
+    "typecheck": "tsc --noEmit",
+    "replace:articles": "node --import tsx scripts/import-articles.ts content/articles --replace-posts",
+    "sync:templates": "node scripts/sync-templates.mjs",
+    "payload": "payload",
+    "generate:types": "payload generate:types",
+    "generate:importmap": "payload generate:importmap"
+  },
+  "dependencies": {
+    "@payloadcms/db-postgres": "3.90.2",
+    "@payloadcms/db-sqlite": "3.90.2",
+    "@payloadcms/next": "3.90.2",
+    "@payloadcms/plugin-seo": "3.90.2",
+    "@payloadcms/richtext-lexical": "3.90.2",
+    "@payloadcms/storage-vercel-blob": "3.90.2",
+    "@payloadcms/translations": "^3.90.2",
+    "graphql": "16.8.1",
+    "next": "16.3.6",
+    "payload": "3.90.2",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "sharp": "0.35.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.12.3",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "tsx": "^4.23.15",
+    "typescript": "6.0.3"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

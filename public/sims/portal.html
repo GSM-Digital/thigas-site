@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Portal do cliente</title>
+<link rel="stylesheet" href="assets/sim.css">
+<link rel="stylesheet" href="assets/portal.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.4 3 7.8 7 9 4-1.2 7-4.6 7-9V6Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18M12 9v11M12 9c-1.5-3-5.5-4-5.5-1.5S10 9 12 9Zm0 0c1.5-3 5.5-4 5.5-1.5S14 9 12 9Z"/></g></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M7 3h7l4 4v14H7Z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></g></symbol>
+<symbol id="i-help" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 17V9a7 7 0 0 1 14 0v8"/><path d="M5 17h3v-5H5M19 17h-3v-5h3M16 17v1a3 3 0 0 1-3 3h-1"/></g></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2.5c.6 4.6 2.9 6.9 7.5 7.5-4.6.6-6.9 2.9-7.5 7.5-.6-4.6-2.9-6.9-7.5-7.5 4.6-.6 6.9-2.9 7.5-7.5ZM19 15c.3 2 1.2 2.9 3 3.2-1.8.3-2.7 1.2-3 3.2-.3-2-1.2-2.9-3-3.2 1.8-.3 2.7-1.2 3-3.2Z" fill="currentColor"/></symbol>
+<symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15ZM10 20a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></g></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5.5 12.5 4 4 9-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-send" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24"><path d="M12 20V9M7 14l5-5 5 5M5 4h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24"><path d="M14 4h5v16h-5M10 8l-4 4 4 4M6 12h10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></g></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></g></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8 6.6 19.7l1.1-6.1-4.5-4.2 6.1-.8Z" fill="currentColor"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+</defs></svg>
+
+<!-- ===== Entrar ===== -->
+<div class="page login" data-route="/entrar" data-title="Entrar">
+<aside class="login-side" aria-hidden="true"><div class="login-brand"><i class="mark"></i>Portal do cliente</div><div class="login-pitch"><p class="login-eyebrow"><svg><use href="#i-spark"/></svg>Plataformas sob medida</p><h2 class="display">Seu gargalo vira sistema.</h2><p>Garantia, seguro, pontos e documentos do cliente em um só lugar, com um assistente de IA que responde na hora.</p></div><div class="login-preview"><div class="lp-card"><span class="lp-ic"><svg><use href="#i-shield"/></svg></span><div><b>Garantia ativa</b><small>até 12/03/2027</small></div></div><div class="lp-card"><span class="lp-ic g"><svg><use href="#i-gift"/></svg></span><div><b>1.280 pontos</b><small>faltam 220 para Ouro</small></div></div></div></aside>
+<main class="login-main" id="main-login"><div class="login-box">
+<div class="login-brand m"><i class="mark"></i>Portal do cliente</div>
+<form id="f-login" class="login-form" aria-labelledby="login-t" autocomplete="off"><h1 class="display" id="login-t">Entrar</h1><p class="muted">Acesse sua conta para ver garantias, seguro, pontos e documentos.</p>
+<div class="field"><label for="lu">Usuário</label><input class="input" id="lu" name="usuario" required autocomplete="off" autocapitalize="none" spellcheck="false" value="seu-nome"></div>
+<div class="field"><div class="label-row"><label for="lp">Senha</label><button class="link forgot" type="button" id="forgot">Esqueci minha senha</button></div><div class="pw"><input class="input" id="lp" name="senha" type="password" required autocomplete="new-password" data-lpignore="true" data-1p-ignore value="demo1234"><button class="pw-toggle" type="button" id="pw-toggle" aria-pressed="false" aria-controls="lp"><svg aria-hidden="true"><use href="#i-eye"/></svg><span class="sr-only">Mostrar senha</span></button></div></div>
+<label class="check"><input type="checkbox" checked>Manter conectado neste dispositivo</label>
+<button class="btn btn-lg btn-block" type="submit">Entrar</button>
+<p class="sim-note"><svg><use href="#i-lock"/></svg>Simulação: qualquer usuário e senha funcionam. Não use sua senha real.</p></form>
+</div></main>
+</div>
+
+<!-- ===== App ===== -->
+<div class="app" id="app">
+<aside class="side" id="side" aria-label="Menu do portal">
+<div class="side-top"><a class="brand" href="#/"><i class="mark" aria-hidden="true"></i>Portal</a><button class="icon-btn side-x" type="button" id="side-x" aria-label="Fechar menu"><svg><use href="#i-x"/></svg></button></div>
+<nav class="side-nav"><a href="#/" data-nav="/"><svg aria-hidden="true"><use href="#i-home"/></svg>Início</a><a href="#/garantias" data-nav="/garantias"><svg aria-hidden="true"><use href="#i-shield"/></svg>Garantias e seguro</a><a href="#/beneficios" data-nav="/beneficios"><svg aria-hidden="true"><use href="#i-gift"/></svg>Benefícios</a><a href="#/documentos" data-nav="/documentos"><svg aria-hidden="true"><use href="#i-doc"/></svg>Documentos</a><a href="#/suporte" data-nav="/suporte"><svg aria-hidden="true"><use href="#i-help"/></svg>Suporte</a><a href="#/assistente" data-nav="/assistente" class="ai-link"><svg aria-hidden="true"><use href="#i-spark"/></svg>Assistente IA<span class="new">Novo</span></a></nav>
+<div class="side-user"><span class="av" aria-hidden="true">SN</span><div><b>seu-nome</b><small>Cliente desde 2022</small></div><button class="icon-btn" type="button" id="logout" aria-label="Sair"><svg><use href="#i-out"/></svg></button></div>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+<div class="main-col">
+<header class="top">
+<button class="icon-btn burger" type="button" id="burger" aria-expanded="false" aria-controls="side" aria-label="Abrir menu"><svg><use href="#i-menu"/></svg></button>
+<form class="top-search" id="top-search" role="search"><label class="sr-only" for="ts">Buscar documentos</label><svg aria-hidden="true"><use href="#i-search"/></svg><input id="ts" type="search" placeholder="Buscar documentos"></form>
+<a class="btn btn-sm ai-btn" href="#/assistente"><svg aria-hidden="true"><use href="#i-spark"/></svg>Assistente IA</a>
+<div class="notif"><button class="icon-btn" type="button" id="notif-btn" aria-expanded="false" aria-controls="notif" aria-label="Notificações, 2 não lidas"><svg aria-hidden="true"><use href="#i-bell"/></svg><b class="dot" id="notif-dot">2</b></button>
+<div class="notif-panel" id="notif" role="region" aria-label="Notificações"><div class="notif-hd"><b>Notificações</b><button class="link" type="button" id="notif-read">Marcar como lidas</button></div><ul role="list" id="notif-list"><li class="unread"><span class="n-ic"><svg><use href="#i-gift"/></svg></span><div><b>+120 pontos creditados</b><small>Compra de acessórios · hoje</small></div></li><li class="unread"><span class="n-ic"><svg><use href="#i-doc"/></svg></span><div><b>Nota fiscal disponível</b><small>Documentos · ontem</small></div></li><li><span class="n-ic"><svg><use href="#i-shield"/></svg></span><div><b>Revisão realizada</b><small>Garantias · 10 dias atrás</small></div></li></ul></div></div>
+<span class="av top-av" aria-hidden="true">SN</span>
+</header>
+<main class="content" id="main">
+
+<!-- Início -->
+<div class="page" data-route="/" data-title="Início" hidden>
+<div class="hello"><div><h1 class="display">Olá, seu-nome</h1><p class="muted">Aqui está o resumo da sua conta.</p></div></div>
+<div class="banner" id="ai-banner"><span class="b-ic"><svg><use href="#i-spark"/></svg></span><p><b>Novo:</b> pergunte ao Assistente IA sobre garantia, seguro e pontos.</p><a class="btn btn-sm btn-light" href="#/assistente">Experimentar</a><button class="icon-btn" type="button" id="banner-x" aria-label="Dispensar aviso"><svg><use href="#i-x"/></svg></button></div>
+<ul class="kpis" role="list">
+<li class="kpi card"><span class="k-l"><svg><use href="#i-gift"/></svg>Pontos</span><b class="k-v" data-bind="points"></b><div class="bar" role="progressbar" aria-label="Progresso até o nível Ouro" aria-valuemin="0" aria-valuemax="1500" data-bind-bar="points"><i></i></div><small data-bind="points-left"></small></li>
+<li class="kpi card"><span class="k-l"><svg><use href="#i-shield"/></svg>Garantia</span><b class="k-v">Ativa</b><div class="bar" role="progressbar" aria-label="Tempo de garantia usado" aria-valuemin="0" aria-valuemax="100" aria-valuenow="38"><i style="width:38%"></i></div><small>Válida até 12/03/2027</small></li>
+<li class="kpi card"><span class="k-l"><svg><use href="#i-lock"/></svg>Seguro</span><b class="k-v" data-bind="ins-status"></b><small data-bind="ins-sub"></small><a class="link" href="#/garantias#seguro" data-bind-link="ins"></a></li>
+</ul>
+<div class="cols">
+<section class="card device"><div class="dev-art" aria-hidden="true"><svg viewBox="0 0 200 160"><defs><linearGradient id="dg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F5F5F7"/><stop offset="1" stop-color="#C7C7CC"/></linearGradient></defs><ellipse cx="100" cy="146" rx="60" ry="6" fill="#000" opacity=".07"/><rect x="48" y="30" width="104" height="104" rx="34" fill="url(#dg)"/><rect x="60" y="42" width="80" height="80" rx="26" fill="#fff" opacity=".6"/><circle cx="100" cy="82" r="14" fill="#1D1D1F"/><circle cx="100" cy="82" r="5" fill="#30D158"/></svg></div><div class="dev-info"><p class="eyebrow">Seu equipamento</p><h2>Modelo Pro 2</h2><dl><div><dt>Nº de série</dt><dd>SN-48213-PRO2</dd></div><div><dt>Compra</dt><dd>12/03/2024</dd></div></dl><p class="chips-row"><span class="tag tag-ok">Garantia ativa</span><span class="tag" data-bind="ins-tag"></span></p></div></section>
+<section class="card quick"><h2>Atalhos</h2><ul role="list"><li><a href="#/garantias#seguro"><span class="q-ic"><svg><use href="#i-lock"/></svg></span>Contratar seguro<svg class="chev"><use href="#i-arrow"/></svg></a></li><li><a href="#/beneficios"><span class="q-ic g"><svg><use href="#i-gift"/></svg></span>Resgatar benefícios<svg class="chev"><use href="#i-arrow"/></svg></a></li><li><a href="#/suporte?novo=1"><span class="q-ic o"><svg><use href="#i-help"/></svg></span>Abrir chamado<svg class="chev"><use href="#i-arrow"/></svg></a></li><li><a href="#/assistente"><span class="q-ic v"><svg><use href="#i-spark"/></svg></span>Falar com a IA<svg class="chev"><use href="#i-arrow"/></svg></a></li></ul></section>
+</div>
+<section class="card act"><h2>Atividade recente</h2><ul role="list" id="activity"></ul></section>
+</div>
+
+<!-- Garantias -->
+<div class="page" data-route="/garantias" data-title="Garantias e seguro" hidden>
+<div class="hello"><div><h1 class="display">Garantias e seguro</h1><p class="muted">Proteção do seu Modelo Pro 2.</p></div></div>
+<section class="card warranty"><div class="w-hd"><div><p class="eyebrow">Garantia de fábrica</p><h2>Modelo Pro 2 · 36 meses</h2></div><span class="tag tag-ok">Ativa</span></div><div class="w-bar"><div class="bar big"><i style="width:38%"></i></div><p><span>Início 12/03/2024</span><span>Termina 12/03/2027</span></p></div><div class="w-act"><button class="btn btn-ghost" type="button" id="cert-btn"><svg><use href="#i-eye"/></svg>Ver certificado</button></div></section>
+<section class="card ins" id="seguro"><div id="ins-box"></div></section>
+<section class="card rev"><div class="w-hd"><div><p class="eyebrow">Manutenção</p><h2>Revisões</h2></div></div><ul role="list" class="rev-l" id="rev-list"></ul>
+<form class="rev-form" id="rev-form"><div class="field"><label for="rev-date">Agendar revisão</label><input class="input" id="rev-date" type="date" required></div><button class="btn" type="submit"><svg><use href="#i-cal"/></svg>Agendar</button></form></section>
+</div>
+
+<!-- Benefícios -->
+<div class="page" data-route="/beneficios" data-title="Benefícios" hidden>
+<div class="hello"><div><h1 class="display">Benefícios</h1><p class="muted">Troque seus pontos por vantagens.</p></div></div>
+<section class="points card"><div><p class="eyebrow">Seu saldo</p><p class="pts"><b data-bind="points"></b> pontos</p><p class="muted" data-bind="points-left"></p></div><div class="tier"><div class="tier-l"><span>Prata</span><span>Ouro · 1.500</span></div><div class="bar big" role="progressbar" aria-label="Progresso até o nível Ouro" aria-valuemin="0" aria-valuemax="1500" data-bind-bar="points"><i></i></div></div></section>
+<h2 class="sub-t">Recompensas</h2>
+<ul class="rewards" role="list" id="rewards"></ul>
+<section class="card hist"><h2>Histórico de pontos</h2><ul role="list" id="pts-hist"></ul></section>
+</div>
+
+<!-- Documentos -->
+<div class="page" data-route="/documentos" data-title="Documentos" hidden>
+<div class="hello row"><div><h1 class="display">Documentos</h1><p class="muted">Notas fiscais, certificados e apólices.</p></div><label class="btn upload"><svg aria-hidden="true"><use href="#i-up"/></svg>Enviar documento<input type="file" id="upload" class="sr-only"></label></div>
+<div class="doc-bar"><div class="doc-search"><svg aria-hidden="true"><use href="#i-search"/></svg><label class="sr-only" for="doc-q">Buscar documento</label><input class="input" id="doc-q" type="search" placeholder="Buscar pelo nome"></div><div class="chips-row" role="group" aria-label="Filtrar por tipo" id="doc-chips"></div></div>
+<div class="card docs"><ul role="list" id="docs"></ul><p class="empty-l" id="docs-empty" hidden>Nenhum documento encontrado.</p></div>
+</div>
+
+<!-- Suporte -->
+<div class="page" data-route="/suporte" data-title="Suporte" hidden>
+<div class="hello row"><div><h1 class="display">Suporte</h1><p class="muted">Acompanhe seus chamados.</p></div><button class="btn" type="button" id="new-ticket"><svg><use href="#i-plus"/></svg>Novo chamado</button></div>
+<section class="card ticket-form" id="ticket-box" hidden><h2 id="tf-t" tabindex="-1">Novo chamado</h2><form id="ticket-form"><div class="row2"><div class="field"><label for="tk-cat">Assunto</label><select class="select" id="tk-cat" required><option value="">Selecione</option><option>Garantia</option><option>Seguro</option><option>Benefícios</option><option>Funcionamento do equipamento</option><option>Outro</option></select></div><div class="field"><label for="tk-title">Título</label><input class="input" id="tk-title" required placeholder="Resuma em poucas palavras"></div></div><div class="field"><label for="tk-desc">Descrição</label><textarea class="textarea" id="tk-desc" required minlength="10" placeholder="Conte o que aconteceu"></textarea></div><div class="tf-act"><button class="btn btn-ghost" type="button" id="tk-cancel">Cancelar</button><button class="btn" type="submit">Abrir chamado</button></div></form></section>
+<ul class="tickets" role="list" id="tickets"></ul>
+</div>
+
+<!-- Assistente -->
+<div class="page chat-page" data-route="/assistente" data-title="Assistente IA" hidden>
+<div class="chat card">
+<header class="chat-hd"><span class="b-ic"><svg><use href="#i-spark"/></svg></span><div><h1>Assistente IA</h1><p class="muted">Responde sobre garantia, seguro, pontos, documentos e chamados.</p></div></header>
+<div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Conversa com o assistente" tabindex="0"></div>
+<div class="chat-sugg" id="chat-sugg"><button class="chip" type="button">Minha garantia ainda está válida?</button><button class="chip" type="button">Quantos pontos eu tenho?</button><button class="chip" type="button">Quero contratar o seguro</button><button class="chip" type="button">Onde está minha nota fiscal?</button></div>
+<form class="chat-in" id="chat-form"><label class="sr-only" for="chat-q">Mensagem para o assistente</label><input id="chat-q" autocomplete="off" placeholder="Pergunte algo…"><button class="send" type="submit" aria-label="Enviar"><svg><use href="#i-send"/></svg></button></form>
+<p class="sim-note chat-note"><svg><use href="#i-lock"/></svg>Simulação: respostas pré-programadas a partir dos dados desta sessão.</p>
+</div>
+</div>
+
+<div class="page" data-route="*" data-title="Página não encontrada" hidden><div class="hello"><div><h1 class="display">Página não encontrada.</h1><p><a class="link" href="#/">Voltar ao início</a></p></div></div></div>
+</main>
+</div>
+</div>
+
+<dialog class="modal" id="modal" aria-labelledby="modal-t"><div class="modal-in"><button class="icon-btn modal-x" type="button" id="modal-x" aria-label="Fechar"><svg><use href="#i-x"/></svg></button><div id="modal-body"></div></div></dialog>
+
+<script src="assets/sim.js"></script>
+<script src="assets/portal.js"></script>
+</body>
+</html>
