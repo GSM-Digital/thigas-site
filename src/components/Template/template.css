@@ -1,0 +1,8 @@
+/* Logo enviado pelo painel, no lugar do nome com o ponto azul do cabeçalho. */
+.brand-logo {
+  display: block;
+  height: 1.75rem;
+  width: auto;
+  max-width: 11rem;
+  object-fit: contain;
+}

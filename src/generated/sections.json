@@ -1,0 +1,5934 @@
+{
+  "pages": {
+    "index": {
+      "page-t1": {
+        "secao": "Hero",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t2": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Título principal",
+        "parte": 1,
+        "partes": 2
+      },
+      "page-t3": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Título principal",
+        "parte": 2,
+        "partes": 2
+      },
+      "page-t4": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-l1": {
+        "secao": "Hero",
+        "inicio": true,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t5"
+        ]
+      },
+      "page-t5": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l1"
+      },
+      "page-l2": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t6"
+        ]
+      },
+      "page-t6": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-t7": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t8": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g1",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t9": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g1",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t10": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g1",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t11": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g1",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t12": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g1",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t13": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g2",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t14": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g2",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t15": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g2",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t16": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g2",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t17": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t18": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t19": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t20": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g4",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t21": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g4",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t22": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t23": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t24": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t25": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t26": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t27": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t28": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t29": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t30": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t31": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t32": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t33": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g6",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t34": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g6",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t35": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g7",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t36": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g7",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t37": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g8",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t38": {
+        "secao": "Hero",
+        "inicio": false,
+        "grupo": {
+          "id": "g8",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t39": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t40": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t41": {
+        "secao": "Hero",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t42": {
+        "secao": "Soluções",
+        "inicio": true,
+        "grupo": {
+          "id": "g9",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t43": {
+        "secao": "Soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g9",
+          "tipo": "Item"
+        },
+        "papel": "Subtítulo"
+      },
+      "page-t44": {
+        "secao": "Cards de soluções",
+        "inicio": true,
+        "grupo": {
+          "id": "g10",
+          "tipo": "Card"
+        },
+        "papel": "Título"
+      },
+      "page-t45": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g10",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t46": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g11",
+          "tipo": "Card"
+        },
+        "papel": "Título"
+      },
+      "page-t47": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g11",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t48": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g11",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t49": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g11",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t50": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g12",
+          "tipo": "Card"
+        },
+        "papel": "Título"
+      },
+      "page-t51": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g12",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t52": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g12",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t53": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g12",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t54": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g13",
+          "tipo": "Card"
+        },
+        "papel": "Título",
+        "parte": 1,
+        "partes": 2
+      },
+      "page-t55": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g13",
+          "tipo": "Card"
+        },
+        "papel": "Título",
+        "parte": 2,
+        "partes": 2
+      },
+      "page-t56": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g13",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t57": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g13",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t58": {
+        "secao": "Cards de soluções",
+        "inicio": false,
+        "grupo": {
+          "id": "g13",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t59": {
+        "secao": "Em todo projeto",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t60": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g15",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t61": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g15",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t62": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g15",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t63": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g15",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t64": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g15",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t65": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g16",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t66": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g16",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t67": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g16",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t68": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g16",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t69": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g16",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t70": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g17",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t71": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g17",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t72": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g17",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t73": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g17",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t74": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g17",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t75": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g17",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t76": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g18",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t77": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g18",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t78": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g19",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t79": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g19",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t80": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g19",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t81": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g19",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t82": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g19",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t83": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t84": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t85": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t86": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t87": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t88": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t89": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t90": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t91": {
+        "secao": "Em todo projeto",
+        "inicio": false,
+        "grupo": {
+          "id": "g20",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t92": {
+        "secao": "Simulação · Site institucional",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t93": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t94": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t95": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t96": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Etiqueta"
+      },
+      "page-t97": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t98": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t99": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t100": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t101": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t102": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t103": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t104": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t105": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t106": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t107": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t108": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t109": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t110": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t111": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t112": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t113": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l3": {
+        "secao": "Simulação · Site institucional",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t114"
+        ]
+      },
+      "page-t114": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l3"
+      },
+      "page-l4": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t115"
+        ]
+      },
+      "page-t115": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l4"
+      },
+      "page-t116": {
+        "secao": "Simulação · Site institucional",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t117": {
+        "secao": "Simulação · E-commerce",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t118": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t119": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t120": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t121": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Etiqueta"
+      },
+      "page-t122": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t123": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t124": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t125": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t126": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t127": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t128": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t129": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t130": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t131": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t132": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t133": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t134": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t135": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t136": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t137": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t138": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l5": {
+        "secao": "Simulação · E-commerce",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t139"
+        ]
+      },
+      "page-t139": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l5"
+      },
+      "page-l6": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t140"
+        ]
+      },
+      "page-t140": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l6"
+      },
+      "page-t141": {
+        "secao": "Simulação · E-commerce",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t142": {
+        "secao": "Simulação · Landing page",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t143": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t144": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t145": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t146": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Etiqueta"
+      },
+      "page-t147": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t148": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t149": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t150": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t151": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t152": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t153": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t154": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t155": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t156": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t157": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t158": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t159": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t160": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t161": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t162": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t163": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l7": {
+        "secao": "Simulação · Landing page",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t164"
+        ]
+      },
+      "page-t164": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l7"
+      },
+      "page-l8": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t165"
+        ]
+      },
+      "page-t165": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l8"
+      },
+      "page-t166": {
+        "secao": "Simulação · Landing page",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t167": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t168": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t169": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t170": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t171": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Etiqueta"
+      },
+      "page-t172": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Etiqueta"
+      },
+      "page-t173": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t174": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t175": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t176": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t177": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t178": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t179": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t180": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t181": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t182": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t183": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t184": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t185": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t186": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t187": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t188": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t189": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t190": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t191": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l9": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t192"
+        ]
+      },
+      "page-t192": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l9"
+      },
+      "page-l10": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t193"
+        ]
+      },
+      "page-t193": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l10"
+      },
+      "page-t194": {
+        "secao": "Simulação · Plataforma sob medida",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t195": {
+        "secao": "Projetos",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t196": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t197": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t198": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t199": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t200": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t201": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t202": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t203": {
+        "secao": "Projetos",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t204": {
+        "secao": "Chamada dos projetos",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t205": {
+        "secao": "Chamada dos projetos",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-l11": {
+        "secao": "Chamada dos projetos",
+        "inicio": true,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t206"
+        ]
+      },
+      "page-t206": {
+        "secao": "Chamada dos projetos",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l11"
+      },
+      "page-l12": {
+        "secao": "Janela do projeto",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t207"
+        ]
+      },
+      "page-t207": {
+        "secao": "Janela do projeto",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l12"
+      },
+      "page-t208": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t209": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t210": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t211": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l13": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t212"
+        ]
+      },
+      "page-t212": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l13"
+      },
+      "page-t213": {
+        "secao": "Janela do projeto",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t214": {
+        "secao": "Processo",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t215": {
+        "secao": "Processo",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t216": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g25",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t217": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g25",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t218": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g26",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t219": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g26",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t220": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g27",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t221": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g27",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Esta é uma aba: ela troca o conteúdo mostrado na página, por isso não tem link."
+      },
+      "page-t222": {
+        "secao": "Processo",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t223": {
+        "secao": "Processo",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t224": {
+        "secao": "Processo",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t225": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g28",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t226": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g28",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t227": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g28",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t228": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g28",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t229": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g29",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t230": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g29",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t231": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g29",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t232": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g30",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t233": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g30",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t234": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g30",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t235": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g30",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t236": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g30",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t237": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g30",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t238": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t239": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t240": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t241": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t242": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t243": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t244": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t245": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t246": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g31",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t247": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t248": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t249": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t250": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t251": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t252": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t253": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t254": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g32",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t255": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t256": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t257": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t258": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t259": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t260": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t261": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t262": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g33",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t263": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g34",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t264": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g34",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t265": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g34",
+          "tipo": "Item"
+        },
+        "papel": "Botão",
+        "nota": "Este botão executa uma ação do site (filtrar, trocar, abrir), por isso não tem link."
+      },
+      "page-t266": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g34",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t267": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g34",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t268": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g34",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t269": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t270": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t271": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t272": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t273": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t274": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t275": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t276": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t277": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t278": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t279": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t280": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t281": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t282": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t283": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t284": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t285": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t286": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t287": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t288": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t289": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t290": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t291": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t292": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t293": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t294": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t295": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t296": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t297": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t298": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t299": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t300": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t301": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t302": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t303": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t304": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t305": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t306": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t307": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t308": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t309": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t310": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t311": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t312": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t313": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t314": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t315": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t316": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t317": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t318": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g35",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t319": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t320": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t321": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t322": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t323": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t324": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t325": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t326": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t327": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t328": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t329": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t330": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t331": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t332": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t333": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t334": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t335": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t336": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t337": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t338": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t339": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t340": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t341": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t342": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t343": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t344": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t345": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t346": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t347": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t348": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t349": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t350": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t351": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t352": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t353": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t354": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t355": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t356": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t357": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t358": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t359": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t360": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t361": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t362": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t363": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t364": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t365": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t366": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t367": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t368": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t369": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t370": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t371": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t372": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t373": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t374": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t375": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t376": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g36",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t377": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t378": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t379": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t380": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t381": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t382": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t383": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t384": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t385": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t386": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t387": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t388": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t389": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t390": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t391": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t392": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t393": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t394": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t395": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t396": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t397": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t398": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t399": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t400": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t401": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t402": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t403": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t404": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t405": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t406": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t407": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t408": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Título"
+      },
+      "page-t409": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t410": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t411": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t412": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t413": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t414": {
+        "secao": "Processo",
+        "inicio": false,
+        "grupo": {
+          "id": "g37",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t415": {
+        "secao": "Sobre",
+        "inicio": true,
+        "papel": "Título",
+        "parte": 1,
+        "partes": 2
+      },
+      "page-t416": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Título",
+        "parte": 2,
+        "partes": 2
+      },
+      "page-t417": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-i1": {
+        "secao": "Sobre",
+        "inicio": true
+      },
+      "page-t418": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t419": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t420": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g38",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t421": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g38",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t422": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g38",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t423": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g39",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t424": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g39",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t425": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g39",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t426": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g40",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t427": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g40",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t428": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g40",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t429": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g41",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t430": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g41",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t431": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g41",
+          "tipo": "Número"
+        },
+        "papel": "Item da lista"
+      },
+      "page-l14": {
+        "secao": "Sobre",
+        "inicio": true,
+        "papel": "Link do botão",
+        "textos": [
+          "page-t432"
+        ]
+      },
+      "page-t432": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Botão",
+        "link": "page-l14"
+      },
+      "page-l15": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t433"
+        ]
+      },
+      "page-t433": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l15"
+      },
+      "page-t434": {
+        "secao": "Sobre",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t435": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g42",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t436": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g42",
+          "tipo": "Card"
+        },
+        "papel": "Título"
+      },
+      "page-t437": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g42",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t438": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g43",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t439": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g43",
+          "tipo": "Card"
+        },
+        "papel": "Título"
+      },
+      "page-t440": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g43",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t441": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g44",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t442": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g44",
+          "tipo": "Card"
+        },
+        "papel": "Título"
+      },
+      "page-t443": {
+        "secao": "Sobre",
+        "inicio": false,
+        "grupo": {
+          "id": "g44",
+          "tipo": "Card"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t444": {
+        "secao": "Blog",
+        "inicio": true,
+        "papel": "Título",
+        "parte": 1,
+        "partes": 2
+      },
+      "page-t445": {
+        "secao": "Blog",
+        "inicio": false,
+        "papel": "Título",
+        "parte": 2,
+        "partes": 2
+      },
+      "page-t446": {
+        "secao": "Blog",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-l16": {
+        "secao": "Blog",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t447"
+        ]
+      },
+      "page-t447": {
+        "secao": "Blog",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l16"
+      },
+      "page-t448": {
+        "secao": "Contato",
+        "inicio": true,
+        "papel": "Título",
+        "parte": 1,
+        "partes": 2
+      },
+      "page-t449": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Título",
+        "parte": 2,
+        "partes": 2
+      },
+      "page-t450": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t451": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t452": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t453": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t454": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t455": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t456": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t457": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t458": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Campo do formulário"
+      },
+      "page-t459": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t460": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t461": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t462": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t463": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t464": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t465": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g45",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t466": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g46",
+          "tipo": "Campo"
+        },
+        "papel": "Campo do formulário"
+      },
+      "page-t467": {
+        "secao": "Contato",
+        "inicio": false,
+        "grupo": {
+          "id": "g46",
+          "tipo": "Campo"
+        },
+        "papel": "Texto"
+      },
+      "page-t468": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-t469": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-i2": {
+        "secao": "Contato",
+        "inicio": true
+      },
+      "page-t470": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t471": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t472": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-i3": {
+        "secao": "Contato",
+        "inicio": false
+      },
+      "page-t473": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Botão",
+        "nota": "Botão de envio do formulário: ele abre o WhatsApp com a mensagem pronta, por isso não tem link."
+      },
+      "page-t474": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t475": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l17": {
+        "secao": "Contato",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t476"
+        ]
+      },
+      "page-t476": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l17"
+      },
+      "page-t477": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l18": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t478",
+          "page-t479"
+        ]
+      },
+      "page-i4": {
+        "secao": "Contato",
+        "inicio": false
+      },
+      "page-t478": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l18"
+      },
+      "page-t479": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l18"
+      }
+    },
+    "blog": {
+      "page-t1": {
+        "secao": "Topo do blog",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t2": {
+        "secao": "Topo do blog",
+        "inicio": false,
+        "papel": "Título principal",
+        "parte": 1,
+        "partes": 2
+      },
+      "page-t3": {
+        "secao": "Topo do blog",
+        "inicio": false,
+        "papel": "Título principal",
+        "parte": 2,
+        "partes": 2
+      },
+      "page-t4": {
+        "secao": "Topo do blog",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t5": {
+        "secao": "Lista de posts",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t6": {
+        "secao": "Lista de posts",
+        "inicio": false,
+        "papel": "Título"
+      }
+    },
+    "post": {
+      "page-t1": {
+        "secao": "Leia também",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t2": {
+        "secao": "Leia também",
+        "inicio": false,
+        "papel": "Título"
+      },
+      "page-l1": {
+        "secao": "Leia também",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t3"
+        ]
+      },
+      "page-t3": {
+        "secao": "Leia também",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l1"
+      }
+    },
+    "privacidade": {
+      "page-l1": {
+        "secao": "Acessibilidade",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t1"
+        ]
+      },
+      "page-t1": {
+        "secao": "Acessibilidade",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l1"
+      },
+      "page-l2": {
+        "secao": "Menu principal",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t2",
+          "page-t3"
+        ]
+      },
+      "page-t2": {
+        "secao": "Menu principal",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-t3": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-l3": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t4"
+        ]
+      },
+      "page-t4": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l3"
+      },
+      "page-t5": {
+        "secao": "Introdução",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t6": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Título principal"
+      },
+      "page-t7": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t8": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t9": {
+        "secao": "Índice da página",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-l4": {
+        "secao": "Índice da página",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t10"
+        ]
+      },
+      "page-t10": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l4"
+      },
+      "page-l5": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t11"
+        ]
+      },
+      "page-t11": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l5"
+      },
+      "page-l6": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t12"
+        ]
+      },
+      "page-t12": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l6"
+      },
+      "page-l7": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t13"
+        ]
+      },
+      "page-t13": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l7"
+      },
+      "page-l8": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t14"
+        ]
+      },
+      "page-t14": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l8"
+      },
+      "page-l9": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t15"
+        ]
+      },
+      "page-t15": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l9"
+      },
+      "page-l10": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t16"
+        ]
+      },
+      "page-t16": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l10"
+      },
+      "page-t17": {
+        "secao": "1. Responsável e contato",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t18": {
+        "secao": "1. Responsável e contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l11": {
+        "secao": "1. Responsável e contato",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t19"
+        ]
+      },
+      "page-t19": {
+        "secao": "1. Responsável e contato",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l11"
+      },
+      "page-t20": {
+        "secao": "1. Responsável e contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l12": {
+        "secao": "1. Responsável e contato",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t21"
+        ]
+      },
+      "page-t21": {
+        "secao": "1. Responsável e contato",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l12"
+      },
+      "page-t22": {
+        "secao": "1. Responsável e contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t23": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t24": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t25": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t26": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-l13": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": true,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Link",
+        "textos": [
+          "page-t27"
+        ]
+      },
+      "page-t27": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Texto do link",
+        "link": "page-l13"
+      },
+      "page-t28": {
+        "secao": "2. Quais dados são tratados",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t29": {
+        "secao": "3. Para que os dados são usados",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t30": {
+        "secao": "3. Para que os dados são usados",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t31": {
+        "secao": "3. Para que os dados são usados",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t32": {
+        "secao": "3. Para que os dados são usados",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t33": {
+        "secao": "3. Para que os dados são usados",
+        "inicio": false,
+        "papel": "Item da lista"
+      },
+      "page-t34": {
+        "secao": "3. Para que os dados são usados",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t35": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t36": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t37": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": false,
+        "grupo": {
+          "id": "g6",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-l14": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": true,
+        "grupo": {
+          "id": "g6",
+          "tipo": "Item"
+        },
+        "papel": "Link",
+        "textos": [
+          "page-t38"
+        ]
+      },
+      "page-t38": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": false,
+        "grupo": {
+          "id": "g6",
+          "tipo": "Item"
+        },
+        "papel": "Texto do link",
+        "link": "page-l14"
+      },
+      "page-t39": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": false,
+        "grupo": {
+          "id": "g6",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t40": {
+        "secao": "4. Serviços e sites de terceiros",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t41": {
+        "secao": "5. Conservação e segurança",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t42": {
+        "secao": "5. Conservação e segurança",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t43": {
+        "secao": "5. Conservação e segurança",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t44": {
+        "secao": "6. Seus direitos",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t45": {
+        "secao": "6. Seus direitos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l15": {
+        "secao": "6. Seus direitos",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t46"
+        ]
+      },
+      "page-t46": {
+        "secao": "6. Seus direitos",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l15"
+      },
+      "page-t47": {
+        "secao": "6. Seus direitos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l16": {
+        "secao": "6. Seus direitos",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t48"
+        ]
+      },
+      "page-t48": {
+        "secao": "6. Seus direitos",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l16"
+      },
+      "page-t49": {
+        "secao": "6. Seus direitos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t50": {
+        "secao": "7. Alterações desta política",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t51": {
+        "secao": "7. Alterações desta política",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t52": {
+        "secao": "7. Alterações desta política",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t53": {
+        "secao": "Rodapé",
+        "inicio": true,
+        "papel": "Texto"
+      },
+      "page-t54": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t55": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l17": {
+        "secao": "Rodapé",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t56"
+        ]
+      },
+      "page-t56": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l17"
+      },
+      "page-l18": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t57"
+        ]
+      },
+      "page-t57": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l18"
+      },
+      "page-l19": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t58"
+        ]
+      },
+      "page-t58": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l19"
+      },
+      "page-l20": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t59"
+        ]
+      },
+      "page-t59": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l20"
+      }
+    },
+    "termos": {
+      "page-l1": {
+        "secao": "Acessibilidade",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t1"
+        ]
+      },
+      "page-t1": {
+        "secao": "Acessibilidade",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l1"
+      },
+      "page-l2": {
+        "secao": "Menu principal",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t2",
+          "page-t3"
+        ]
+      },
+      "page-t2": {
+        "secao": "Menu principal",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-t3": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-l3": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t4"
+        ]
+      },
+      "page-t4": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l3"
+      },
+      "page-t5": {
+        "secao": "Introdução",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t6": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Título principal"
+      },
+      "page-t7": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t8": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t9": {
+        "secao": "Índice da página",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-l4": {
+        "secao": "Índice da página",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t10"
+        ]
+      },
+      "page-t10": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l4"
+      },
+      "page-l5": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t11"
+        ]
+      },
+      "page-t11": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l5"
+      },
+      "page-l6": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t12"
+        ]
+      },
+      "page-t12": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l6"
+      },
+      "page-l7": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t13"
+        ]
+      },
+      "page-t13": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l7"
+      },
+      "page-l8": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t14"
+        ]
+      },
+      "page-t14": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l8"
+      },
+      "page-l9": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t15"
+        ]
+      },
+      "page-t15": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l9"
+      },
+      "page-l10": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t16"
+        ]
+      },
+      "page-t16": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l10"
+      },
+      "page-l11": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t17"
+        ]
+      },
+      "page-t17": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l11"
+      },
+      "page-t18": {
+        "secao": "1. Sobre o site",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t19": {
+        "secao": "1. Sobre o site",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l12": {
+        "secao": "1. Sobre o site",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t20"
+        ]
+      },
+      "page-t20": {
+        "secao": "1. Sobre o site",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l12"
+      },
+      "page-t21": {
+        "secao": "1. Sobre o site",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t22": {
+        "secao": "2. Uso permitido",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t23": {
+        "secao": "2. Uso permitido",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t24": {
+        "secao": "3. Conteúdo e portfólio",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t25": {
+        "secao": "3. Conteúdo e portfólio",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t26": {
+        "secao": "3. Conteúdo e portfólio",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t27": {
+        "secao": "4. Demonstrações interativas",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t28": {
+        "secao": "4. Demonstrações interativas",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t29": {
+        "secao": "5. Sites e serviços externos",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t30": {
+        "secao": "5. Sites e serviços externos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l13": {
+        "secao": "5. Sites e serviços externos",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t31"
+        ]
+      },
+      "page-t31": {
+        "secao": "5. Sites e serviços externos",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l13"
+      },
+      "page-t32": {
+        "secao": "5. Sites e serviços externos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t33": {
+        "secao": "Contato",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t34": {
+        "secao": "Contato",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t35": {
+        "secao": "7. Disponibilidade e correções",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t36": {
+        "secao": "7. Disponibilidade e correções",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t37": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t38": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l14": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t39"
+        ]
+      },
+      "page-t39": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l14"
+      },
+      "page-t40": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l15": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t41"
+        ]
+      },
+      "page-t41": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l15"
+      },
+      "page-t42": {
+        "secao": "8. Atualizações destes termos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t43": {
+        "secao": "Rodapé",
+        "inicio": true,
+        "papel": "Texto"
+      },
+      "page-t44": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t45": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l16": {
+        "secao": "Rodapé",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t46"
+        ]
+      },
+      "page-t46": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l16"
+      },
+      "page-l17": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t47"
+        ]
+      },
+      "page-t47": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l17"
+      },
+      "page-l18": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t48"
+        ]
+      },
+      "page-t48": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l18"
+      },
+      "page-l19": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t49"
+        ]
+      },
+      "page-t49": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l19"
+      }
+    },
+    "cookies": {
+      "page-l1": {
+        "secao": "Acessibilidade",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t1"
+        ]
+      },
+      "page-t1": {
+        "secao": "Acessibilidade",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l1"
+      },
+      "page-l2": {
+        "secao": "Menu principal",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t2",
+          "page-t3"
+        ]
+      },
+      "page-t2": {
+        "secao": "Menu principal",
+        "inicio": true,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-t3": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l2"
+      },
+      "page-l3": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t4"
+        ]
+      },
+      "page-t4": {
+        "secao": "Menu principal",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l3"
+      },
+      "page-t5": {
+        "secao": "Introdução",
+        "inicio": true,
+        "papel": "Etiqueta"
+      },
+      "page-t6": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Título principal"
+      },
+      "page-t7": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Subtítulo"
+      },
+      "page-t8": {
+        "secao": "Introdução",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t9": {
+        "secao": "Índice da página",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-l4": {
+        "secao": "Índice da página",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t10"
+        ]
+      },
+      "page-t10": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l4"
+      },
+      "page-l5": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t11"
+        ]
+      },
+      "page-t11": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l5"
+      },
+      "page-l6": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t12"
+        ]
+      },
+      "page-t12": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l6"
+      },
+      "page-l7": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t13"
+        ]
+      },
+      "page-t13": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l7"
+      },
+      "page-l8": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t14"
+        ]
+      },
+      "page-t14": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l8"
+      },
+      "page-l9": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t15"
+        ]
+      },
+      "page-t15": {
+        "secao": "Índice da página",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l9"
+      },
+      "page-t16": {
+        "secao": "1. Situação atual",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t17": {
+        "secao": "1. Situação atual",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t18": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t19": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t20": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t21": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g3",
+          "tipo": "Item"
+        },
+        "papel": "Texto"
+      },
+      "page-t22": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g4",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t23": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g4",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t24": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g4",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t25": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t26": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t27": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "grupo": {
+          "id": "g5",
+          "tipo": "Item"
+        },
+        "papel": "Item da lista"
+      },
+      "page-t28": {
+        "secao": "2. Preferências guardadas no navegador",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t29": {
+        "secao": "3. Simulações demonstrativas",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t30": {
+        "secao": "3. Simulações demonstrativas",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t31": {
+        "secao": "3. Simulações demonstrativas",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t32": {
+        "secao": "3. Simulações demonstrativas",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t33": {
+        "secao": "4. WhatsApp e sites de projetos",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t34": {
+        "secao": "4. WhatsApp e sites de projetos",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t35": {
+        "secao": "5. Como controlar ou apagar",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t36": {
+        "secao": "5. Como controlar ou apagar",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t37": {
+        "secao": "6. Mudanças futuras",
+        "inicio": true,
+        "papel": "Título"
+      },
+      "page-t38": {
+        "secao": "6. Mudanças futuras",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l10": {
+        "secao": "6. Mudanças futuras",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t39"
+        ]
+      },
+      "page-t39": {
+        "secao": "6. Mudanças futuras",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l10"
+      },
+      "page-t40": {
+        "secao": "6. Mudanças futuras",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t41": {
+        "secao": "6. Mudanças futuras",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t42": {
+        "secao": "Rodapé",
+        "inicio": true,
+        "papel": "Texto"
+      },
+      "page-t43": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-t44": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto"
+      },
+      "page-l11": {
+        "secao": "Rodapé",
+        "inicio": true,
+        "papel": "Link",
+        "textos": [
+          "page-t45"
+        ]
+      },
+      "page-t45": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l11"
+      },
+      "page-l12": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t46"
+        ]
+      },
+      "page-t46": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l12"
+      },
+      "page-l13": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t47"
+        ]
+      },
+      "page-t47": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l13"
+      },
+      "page-l14": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Link",
+        "textos": [
+          "page-t48"
+        ]
+      },
+      "page-t48": {
+        "secao": "Rodapé",
+        "inicio": false,
+        "papel": "Texto do link",
+        "link": "page-l14"
+      }
+    }
+  },
+  "managed": {
+    "index": [
+      {
+        "secao": "Blog",
+        "tipo": "cards"
+      }
+    ],
+    "blog": [
+      {
+        "secao": "Post em destaque",
+        "tipo": "blog-feature"
+      },
+      {
+        "secao": "Lista de posts",
+        "tipo": "blog-listing"
+      }
+    ],
+    "post": [
+      {
+        "secao": "Artigo",
+        "tipo": "article"
+      },
+      {
+        "secao": "Leia também",
+        "tipo": "related"
+      }
+    ]
+  },
+  "site": {
+    "header-l1": {
+      "secao": "Acessibilidade",
+      "inicio": true,
+      "papel": "Link",
+      "textos": [
+        "header-t1"
+      ]
+    },
+    "header-t1": {
+      "secao": "Acessibilidade",
+      "inicio": true,
+      "papel": "Texto do link",
+      "link": "header-l1"
+    },
+    "header-l2": {
+      "secao": "Menu principal",
+      "inicio": true,
+      "papel": "Link",
+      "textos": [
+        "header-t2",
+        "header-t3"
+      ]
+    },
+    "header-t2": {
+      "secao": "Menu principal",
+      "inicio": true,
+      "papel": "Texto do link",
+      "link": "header-l2"
+    },
+    "header-t3": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "header-l2"
+    },
+    "header-l3": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t4"
+      ]
+    },
+    "header-t4": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Item do menu",
+      "link": "header-l3"
+    },
+    "header-l4": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t5"
+      ]
+    },
+    "header-t5": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Item do menu",
+      "link": "header-l4"
+    },
+    "header-l5": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t6"
+      ]
+    },
+    "header-t6": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Item do menu",
+      "link": "header-l5"
+    },
+    "header-l6": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t7"
+      ]
+    },
+    "header-t7": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Item do menu",
+      "link": "header-l6"
+    },
+    "header-l7": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t8"
+      ]
+    },
+    "header-t8": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Item do menu",
+      "link": "header-l7"
+    },
+    "header-l8": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t9"
+      ]
+    },
+    "header-t9": {
+      "secao": "Menu principal",
+      "inicio": false,
+      "papel": "Item do menu",
+      "link": "header-l8"
+    },
+    "header-l9": {
+      "secao": "Botões do topo",
+      "inicio": true,
+      "papel": "Link do botão",
+      "textos": [
+        "header-t10"
+      ]
+    },
+    "header-t10": {
+      "secao": "Botões do topo",
+      "inicio": true,
+      "papel": "Botão",
+      "link": "header-l9"
+    },
+    "header-l10": {
+      "secao": "Menu no celular",
+      "inicio": true,
+      "papel": "Link",
+      "textos": [
+        "header-t11"
+      ]
+    },
+    "header-t11": {
+      "secao": "Menu no celular",
+      "inicio": true,
+      "papel": "Texto do link",
+      "link": "header-l10"
+    },
+    "header-l11": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t12"
+      ]
+    },
+    "header-t12": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "header-l11"
+    },
+    "header-l12": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t13"
+      ]
+    },
+    "header-t13": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "header-l12"
+    },
+    "header-l13": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t14"
+      ]
+    },
+    "header-t14": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "header-l13"
+    },
+    "header-l14": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t15"
+      ]
+    },
+    "header-t15": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "header-l14"
+    },
+    "header-l15": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Link",
+      "textos": [
+        "header-t16"
+      ]
+    },
+    "header-t16": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "header-l15"
+    },
+    "header-l16": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Link do botão",
+      "textos": [
+        "header-t17"
+      ]
+    },
+    "header-t17": {
+      "secao": "Menu no celular",
+      "inicio": false,
+      "papel": "Botão",
+      "link": "header-l16"
+    },
+    "footer-t1": {
+      "secao": "Rodapé",
+      "inicio": true,
+      "papel": "Texto"
+    },
+    "footer-t2": {
+      "secao": "Rodapé",
+      "inicio": false,
+      "papel": "Texto"
+    },
+    "footer-t3": {
+      "secao": "Rodapé",
+      "inicio": false,
+      "papel": "Texto"
+    },
+    "footer-t4": {
+      "secao": "Rodapé",
+      "inicio": false,
+      "papel": "Texto"
+    },
+    "footer-t5": {
+      "secao": "Chamada do rodapé",
+      "inicio": true,
+      "papel": "Título",
+      "parte": 1,
+      "partes": 2
+    },
+    "footer-t6": {
+      "secao": "Chamada do rodapé",
+      "inicio": false,
+      "papel": "Título",
+      "parte": 2,
+      "partes": 2
+    },
+    "footer-l1": {
+      "secao": "Chamada do rodapé",
+      "inicio": true,
+      "papel": "Link do botão",
+      "textos": [
+        "footer-t7"
+      ]
+    },
+    "footer-t7": {
+      "secao": "Chamada do rodapé",
+      "inicio": false,
+      "papel": "Botão",
+      "link": "footer-l1"
+    },
+    "footer-l2": {
+      "secao": "Colunas de links",
+      "inicio": true,
+      "papel": "Link",
+      "textos": [
+        "footer-t8"
+      ]
+    },
+    "footer-t8": {
+      "secao": "Colunas de links",
+      "inicio": true,
+      "papel": "Texto do link",
+      "link": "footer-l2"
+    },
+    "footer-t9": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "papel": "Texto"
+    },
+    "footer-t10": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Título"
+    },
+    "footer-l3": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t11"
+      ]
+    },
+    "footer-t11": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l3"
+    },
+    "footer-l4": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t12"
+      ]
+    },
+    "footer-t12": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l4"
+    },
+    "footer-l5": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t13"
+      ]
+    },
+    "footer-t13": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l5"
+    },
+    "footer-l6": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t14"
+      ]
+    },
+    "footer-t14": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l6"
+    },
+    "footer-l7": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t15"
+      ]
+    },
+    "footer-t15": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l7"
+    },
+    "footer-l8": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t16"
+      ]
+    },
+    "footer-t16": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g1",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l8"
+    },
+    "footer-t17": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g2",
+        "tipo": "Item"
+      },
+      "papel": "Título"
+    },
+    "footer-t18": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g2",
+        "tipo": "Item"
+      },
+      "papel": "Botão",
+      "nota": "Este botão abre uma janela da própria página, por isso não tem link."
+    },
+    "footer-t19": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g2",
+        "tipo": "Item"
+      },
+      "papel": "Botão",
+      "nota": "Este botão abre uma janela da própria página, por isso não tem link."
+    },
+    "footer-t20": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g2",
+        "tipo": "Item"
+      },
+      "papel": "Botão",
+      "nota": "Este botão abre uma janela da própria página, por isso não tem link."
+    },
+    "footer-t21": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g2",
+        "tipo": "Item"
+      },
+      "papel": "Botão",
+      "nota": "Este botão abre uma janela da própria página, por isso não tem link."
+    },
+    "footer-t22": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g3",
+        "tipo": "Item"
+      },
+      "papel": "Título"
+    },
+    "footer-l9": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g3",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t23"
+      ]
+    },
+    "footer-t23": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g3",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l9"
+    },
+    "footer-l10": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g3",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t24"
+      ]
+    },
+    "footer-t24": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g3",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l10"
+    },
+    "footer-t25": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Título"
+    },
+    "footer-l11": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t26"
+      ]
+    },
+    "footer-t26": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l11"
+    },
+    "footer-l12": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t27"
+      ]
+    },
+    "footer-t27": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l12"
+    },
+    "footer-l13": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Link",
+      "textos": [
+        "footer-t28"
+      ]
+    },
+    "footer-t28": {
+      "secao": "Colunas de links",
+      "inicio": false,
+      "grupo": {
+        "id": "g4",
+        "tipo": "Item"
+      },
+      "papel": "Texto do link",
+      "link": "footer-l13"
+    },
+    "footer-t29": {
+      "secao": "Rodapé inferior",
+      "inicio": true,
+      "papel": "Texto"
+    },
+    "footer-t30": {
+      "secao": "Rodapé inferior",
+      "inicio": false,
+      "papel": "Texto"
+    },
+    "footer-t31": {
+      "secao": "Rodapé inferior",
+      "inicio": false,
+      "papel": "Texto"
+    },
+    "footer-l14": {
+      "secao": "Rodapé inferior",
+      "inicio": true,
+      "papel": "Link",
+      "textos": [
+        "footer-t32"
+      ]
+    },
+    "footer-t32": {
+      "secao": "Rodapé inferior",
+      "inicio": false,
+      "papel": "Texto do link",
+      "link": "footer-l14"
+    }
+  }
+}

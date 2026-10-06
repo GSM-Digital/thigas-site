@@ -54,7 +54,7 @@ requestAnimationFrame(function(){requestAnimationFrame(heroIn)});setTimeout(hero
 /* vitrine: abas com seletor deslizante, teclado (setas/Home/End) e ciclo automático */
 var tabs=$('#tabs');
 if(tabs){var tabBtns=$$('[role=tab]',tabs),screen=$('#screen'),panel=$('#tab-panel'),captions=$$('.caption',panel),urlText=$('#url-text'),gauge=$('#gauge-val'),gaugeNum=$('#gauge-num'),progress=$('#tabs-progress'),stage=$('.stage');
-var current=tabBtns.findIndex(function(b){return b.getAttribute('aria-selected')==='true'}),userTook=false,inView=true,focused=false,countRaf;
+var current=tabBtns.findIndex(function(b){return b.getAttribute('aria-selected')==='true'}),inView=true,focused=false,termHover=false,countRaf;
 captions.forEach(function(c){c.hidden=false;c.setAttribute('aria-hidden',String(!c.classList.contains('is-active')))});
 function moveThumb(animate){var b=tabBtns[current];if(!animate)tabs.classList.add('no-anim');tabs.style.setProperty('--tx',b.offsetLeft+'px');tabs.style.setProperty('--tw',b.offsetWidth+'px');if(!animate){tabs.offsetWidth;tabs.classList.remove('no-anim')}}
 var gaugeLength=2*Math.PI*16;
@@ -71,17 +71,21 @@ countTo(parseInt(b.dataset.score,10));
 b.scrollIntoView&&tabs.scrollWidth>tabs.clientWidth&&b.scrollIntoView({block:'nearest',inline:'nearest',behavior:motion.allowed()?'smooth':'auto'});
 moveThumb(prev!==idx);restartCycle()}
 /* ciclo automático: dirigido pelo fim da barra de progresso (pausa junto com ela) */
-function cycleActive(){return!userTook&&motion.allowed()}
+function cycleActive(){return motion.allowed()}
 function restartCycle(){tabs.classList.remove('is-cycling');if(!cycleActive())return;progress.offsetWidth;tabs.classList.add('is-cycling');syncPause()}
-function syncPause(){tabs.classList.toggle('is-paused',!inView||focused||d.hidden)}
-progress.addEventListener('animationend',function(e){if(e.animationName==='tab-progress'&&cycleActive())select(current+1)});
-function takeOver(){if(userTook)return;userTook=true;tabs.classList.remove('is-cycling');panel.setAttribute('aria-live','polite')}
+function syncPause(){tabs.classList.toggle('is-paused',!inView||focused||termHover||d.hidden)}
+progress.addEventListener('animationend',function(e){if(e.animationName==='tab-progress'&&cycleActive()){panel.removeAttribute('aria-live');select(current+1)}});
+/* ao escolher uma aba, o cronômetro só reinicia (select chama restartCycle); o ciclo nunca é encerrado */
+function takeOver(){panel.setAttribute('aria-live','polite')}
 tabBtns.forEach(function(b,j){b.addEventListener('click',function(){takeOver();select(j)})});
 tabs.addEventListener('keydown',function(e){var k=e.key,n=null;if(k==='ArrowRight'||k==='ArrowDown')n=current+1;else if(k==='ArrowLeft'||k==='ArrowUp')n=current-1;else if(k==='Home')n=0;else if(k==='End')n=tabBtns.length-1;if(n===null)return;e.preventDefault();takeOver();select(n,{focus:true})});
 tabs.addEventListener('pointerdown',function(){tabs.classList.add('is-pressing')});
 ['pointerup','pointercancel','pointerleave'].forEach(function(ev){tabs.addEventListener(ev,function(){tabs.classList.remove('is-pressing')})});
-stage.addEventListener('focusin',function(){focused=true;syncPause()});stage.addEventListener('focusout',function(){focused=false;syncPause()});
+/* só o foco por teclado pausa o ciclo; clique com o mouse não */
+stage.addEventListener('focusin',function(e){focused=!!(e.target.matches&&e.target.matches(':focus-visible'));syncPause()});stage.addEventListener('focusout',function(){focused=false;syncPause()});
 d.addEventListener('visibilitychange',syncPause);
+/* pausa o ciclo enquanto o mouse estiver sobre um termo com dica (SEO, AEO) */
+panel.addEventListener('pointerover',function(e){var on=!!(e.target.closest&&e.target.closest('.term'));if(on!==termHover){termHover=on;syncPause()}});panel.addEventListener('pointerleave',function(){if(termHover){termHover=false;syncPause()}});
 if('IntersectionObserver'in window){var visibleParts={stage:false,tabs:false},viewObserver=new IntersectionObserver(function(en){en.forEach(function(item){visibleParts[item.target===stage?'stage':'tabs']=item.isIntersecting});inView=visibleParts.stage||visibleParts.tabs;syncPause()},{threshold:0});viewObserver.observe(stage);viewObserver.observe(tabs)}
 if('ResizeObserver'in window)new ResizeObserver(function(){moveThumb(false)}).observe(tabs);else addEventListener('resize',function(){moveThumb(false)});
 if(d.fonts&&d.fonts.ready)d.fonts.ready.then(function(){moveThumb(false)});
@@ -157,11 +161,11 @@ function buildTl(){var st=stepsOf(curList());tl.innerHTML=st.map(function(s,i){r
 /* clique na barra: rola até a etapa chegar ao topo da pilha (cartas têm a mesma altura) */
 function goStep(i){var list=curList(),st=stepsOf(list),c=st[i];if(!c)return;var gap=parseFloat(getComputedStyle(list).rowGap)||0,top0=list.getBoundingClientRect().top+scrollY,y=top0+i*(st[0].offsetHeight+gap)-(parseFloat(c.style.top)||0)+2;scrollTo({top:y,behavior:motion.allowed()?'smooth':'auto'})}
 tl.addEventListener('click',function(e){var b=e.target.closest('[data-go-step]');if(b)goStep(+b.getAttribute('data-go-step'))});
-function activate(i){var list=curList(),st=stepsOf(list);if(!st[i])return;cur=i;var s=st[i],total=list.getAttribute('data-total');
+function activate(i){var list=curList(),st=stepsOf(list);if(!st[i])return;cur=i;var s=st[i];
 st.forEach(function(x,j){x.classList.toggle('is-on',j===i);x.classList.toggle('is-done',j<i)});
 $$('.tl-seg',tl).forEach(function(g,j){g.classList.toggle('done',j<i);g.classList.toggle('on',j===i)});
 $('#stage-k').textContent='Etapa '+(i+1)+' de '+st.length;$('#stage-name').textContent=$('.step-t',s).textContent;
-var a=s.getAttribute('data-from'),b=s.getAttribute('data-to');$('#stage-range').textContent=a===b?'Dia '+a:'Dias '+a+' a '+b;$('#stage-total').textContent='de '+total+' dias úteis';
+var a=s.getAttribute('data-from'),b=s.getAttribute('data-to');$('#stage-range').textContent=a===b?'Dia '+a:'Dias '+a+' a '+b;
 sceneEls.forEach(function(e){e.classList.toggle('is-on',e.getAttribute('data-scene')===s.getAttribute('data-scene'))})}
 /* pilha: calcula o topo fixo de cada cartão (cartões altos só grudam depois de mostrar tudo), a profundidade e a etapa ativa */
 var mqDesk=matchMedia('(min-width: 66.8125em)'),stackTick=false,stage=$('.proc-stage',proc),stageShift=0;
@@ -353,4 +357,15 @@ if(hero)new IntersectionObserver(function(en){if(!spyLock&&en[0].isIntersecting)
 var ftDisplay=$('.ft-display'),ftSection=$('.site-footer'),ftRaf=0;
 function resetFt(){cancelAnimationFrame(ftRaf);ftRaf=0;ftDisplay.style.setProperty('--fx','50%');ftDisplay.style.setProperty('--fy','50%')}
 if(ftDisplay){ftSection.addEventListener('pointermove',function(e){if(e.pointerType!=='mouse'||!motion.allowed())return;var r=ftDisplay.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;if(ftRaf)cancelAnimationFrame(ftRaf);ftRaf=requestAnimationFrame(function(){ftDisplay.style.setProperty('--fx',x+'px');ftDisplay.style.setProperty('--fy',y+'px');ftRaf=0})});ftSection.addEventListener('pointerleave',resetFt);motion.on(function(ok){if(!ok)resetFt()})}
+})();
+
+/* termos e selos com dica: mantém a dica dentro da tela e permite fechar com Esc */
+(function(){'use strict';
+var terms=Array.prototype.slice.call(document.querySelectorAll('.term,.has-tip'));
+if(!terms.length)return;
+function fit(t){var tip=t.querySelector('.term-tip');if(!tip)return;tip.style.setProperty('--tip-x','0px');t.removeAttribute('data-flip');var r=tip.getBoundingClientRect(),m=12,w=document.documentElement.clientWidth,x=0;if(t.classList.contains('has-tip')){var bar=document.querySelector('.topbar'),min=(bar?bar.getBoundingClientRect().bottom:0)+m;if(r.top<min)t.setAttribute('data-flip','')}if(r.left<m)x=m-r.left;else if(r.right>w-m)x=w-m-r.right;tip.style.setProperty('--tip-x',x+'px')}
+terms.forEach(function(t){
+['pointerenter','focus'].forEach(function(n){t.addEventListener(n,function(){fit(t)})});
+['pointerleave','blur'].forEach(function(n){t.addEventListener(n,function(){t.removeAttribute('data-off')})})});
+document.addEventListener('keydown',function(e){if(e.key!=='Escape')return;terms.forEach(function(t){if(t.matches(':hover'))t.setAttribute('data-off','')});var a=document.activeElement;if(a&&a.classList&&a.classList.contains('term'))a.blur()});
 })();

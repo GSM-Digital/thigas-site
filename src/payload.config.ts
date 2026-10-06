@@ -1,37 +1,50 @@
-import { postgresAdapter } from '@payloadcms/db-postgres'
-import { sqliteAdapter } from '@payloadcms/db-sqlite'
-import { seoPlugin } from '@payloadcms/plugin-seo'
-import { EXPERIMENTAL_TableFeature, lexicalEditor } from '@payloadcms/richtext-lexical'
-import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
-import { pt } from '@payloadcms/translations/languages/pt'
+import path from 'node:path'
+import { mkdirSync } from 'node:fs'
 import { buildConfig } from 'payload'
-import path from 'path'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
+import { lexicalEditor } from '@payloadcms/richtext-lexical'
+import { pt } from '@payloadcms/translations/languages/pt'
 import sharp from 'sharp'
-import { fileURLToPath } from 'url'
-import { Users } from './collections/Users'
-import { Media } from './collections/Media'
-import { Posts } from './collections/Posts'
-import { SiteContent } from './globals/SiteContent'
+import { Users, Media, Pages, Site, Settings } from './cms/collections'
+import { Categories, Posts } from './cms/blog'
+import { seedPrototype } from './cms/seed'
+import { seedBlog } from './cms/seed-blog'
+import { ADMIN_ROUTE } from './lib/routes'
+import { db, usingPostgres } from './db'
 
-const dirname = path.dirname(fileURLToPath(import.meta.url))
-const databaseURL = process.env.DATABASE_URL || 'file:./payload.sqlite'
-const isPostgres = /^postgres(?:ql)?:\/\//.test(databaseURL)
-if (process.env.VERCEL && (!isPostgres || !process.env.PAYLOAD_SECRET || !process.env.BLOB_READ_WRITE_TOKEN)) {
-  throw new Error('Configure DATABASE_URL (Postgres), PAYLOAD_SECRET e BLOB_READ_WRITE_TOKEN na Vercel.')
+// Só o SQLite grava em disco (a Vercel não deixa); com Postgres não há pasta de dados.
+if (!usingPostgres) mkdirSync(path.resolve('.data'), { recursive: true })
+if (!process.env.PAYLOAD_SECRET || process.env.PAYLOAD_SECRET.startsWith('SUBSTITUA')) {
+  throw new Error('Defina PAYLOAD_SECRET privado no arquivo .env antes de iniciar.')
 }
 
 export default buildConfig({
-  admin: { user: 'users', importMap: { baseDir: dirname }, meta: { titleSuffix: ' | Thiago Barreto' } },
+  secret: process.env.PAYLOAD_SECRET,
+  serverURL: process.env.SERVER_URL || 'http://localhost:3000',
+  // O painel fica em /gestao (a pasta src/app/(payload)/gestao precisa ter o mesmo nome).
+  routes: { admin: ADMIN_ROUTE },
+  admin: {
+    user: 'users',
+    importMap: { baseDir: path.resolve('src') },
+    components: {
+      beforeLogin: ['/components/admin/PasswordVisibility'],
+      beforeNavLinks: ['/components/admin/PagesNav'],
+      graphics: { Logo: '/components/admin/Logo', Icon: '/components/admin/Icon' },
+    },
+    meta: { titleSuffix: ' | Thiago Barreto' },
+  },
+  collections: [Pages, Posts, Categories, Media, Users], globals: [Settings, Site],
+  editor: lexicalEditor(), sharp,
+  db,
+  // Na Vercel o disco não é permanente: com BLOB_READ_WRITE_TOKEN, os uploads vão para o Vercel Blob (endereço público direto, envio
+  // do navegador para o Blob, sem o limite de 4,5 MB da função). Sem o token, ficam em ./media, como sempre.
+  plugins: [vercelBlobStorage({ enabled: Boolean(process.env.BLOB_READ_WRITE_TOKEN), collections: { media: { disablePayloadAccessControl: true } }, token: process.env.BLOB_READ_WRITE_TOKEN || '', clientUploads: true })],
   i18n: { supportedLanguages: { pt }, fallbackLanguage: 'pt' },
-  collections: [Users, Media, Posts],
-  globals: [SiteContent],
-  editor: lexicalEditor({ features: ({ defaultFeatures }) => [...defaultFeatures, EXPERIMENTAL_TableFeature()] }),
-  secret: process.env.PAYLOAD_SECRET || 'development-only-change-this-secret',
-  db: isPostgres ? postgresAdapter({ pool: { connectionString: databaseURL } }) : sqliteAdapter({ client: { url: databaseURL } }),
-  sharp,
-  typescript: { outputFile: path.join(dirname, 'payload-types.ts') },
-  plugins: [
-    seoPlugin({ collections: ['posts'], globals: ['site-content'], uploadsCollection: 'media', generateTitle: ({ doc }) => `${doc?.title || 'Thiago Barreto'} — Thiago Barreto`, generateDescription: ({ doc }) => String(doc?.excerpt || '') }),
-    vercelBlobStorage({ enabled: Boolean(process.env.BLOB_READ_WRITE_TOKEN), collections: { media: true }, token: process.env.BLOB_READ_WRITE_TOKEN, clientUploads: true }),
-  ],
+  typescript: { outputFile: path.resolve('src/payload-types.ts') },
+  onInit: async (payload) => {
+    // Os scripts de importação e de geração de artigos abrem o Payload só para ler a configuração.
+    if (process.env.PAYLOAD_SKIP_SEED === '1') return
+    await seedPrototype(payload)
+    await seedBlog(payload)
+  },
 })

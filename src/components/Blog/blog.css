@@ -1,0 +1,37 @@
+/* Blog: o que o layout do protótipo não tinha por ser estático. */
+
+/* "Carregar mais" e o aviso de lista vazia, com o visual dos links do site. */
+.ed-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.ed-more .text-link {
+  font: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.ed-empty {
+  margin: 1rem 0 0;
+  color: var(--muted);
+}
+
+/* Aviso de que o rascunho só aparece para quem está logado no painel. */
+.blog-preview-bar {
+  padding: 0.625rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-blue, #0071e3);
+}
+
+/* Imagens inseridas no meio do texto do post. */
+.ed-prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg, 1.125rem);
+}

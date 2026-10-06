@@ -1,45 +1,52 @@
 {
-  "name": "thiago-barreto-site",
-  "private": true,
+  "name": "thiago-barreto",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "predev": "node scripts/sync-templates.mjs",
-    "dev": "next dev --port 3000",
-    "prebuild": "node scripts/sync-templates.mjs",
-    "build": "next build",
-    "start": "next start --port 3000",
-    "pretypecheck": "node scripts/sync-templates.mjs",
+    "dev": "next dev --webpack --hostname 127.0.0.1 --port 3000",
+    "build": "next build --webpack",
+    "start": "next start --hostname 0.0.0.0",
     "typecheck": "tsc --noEmit",
-    "replace:articles": "node --import tsx scripts/import-articles.ts content/articles --replace-posts",
-    "sync:templates": "node scripts/sync-templates.mjs",
     "payload": "payload",
     "generate:types": "payload generate:types",
-    "generate:importmap": "payload generate:importmap"
+    "generate:importmap": "payload generate:importmap",
+    "import:prototype": "node scripts/import-prototype.mjs && npm run build:sections",
+    "build:sections": "node scripts/build-sections.mjs",
+    "build:articles": "node --env-file=.env --import tsx scripts/build-articles.ts",
+    "test": "node --test tests/*.test.mjs",
+    "test:cms": "node scripts/verify-cms.mjs",
+    "test:html": "node scripts/verify-html.mjs",
+    "create-admin": "node --env-file=.env --import tsx scripts/create-admin.ts",
+    "vercel-build": "node --import tsx scripts/prepare.ts && next build --webpack",
+    "prepare:db": "node --env-file=.env --import tsx scripts/prepare.ts"
   },
   "dependencies": {
-    "@payloadcms/db-postgres": "3.90.2",
-    "@payloadcms/db-sqlite": "3.90.2",
-    "@payloadcms/next": "3.90.2",
-    "@payloadcms/plugin-seo": "3.90.2",
-    "@payloadcms/richtext-lexical": "3.90.2",
-    "@payloadcms/storage-vercel-blob": "3.90.2",
-    "@payloadcms/translations": "^3.90.2",
-    "graphql": "16.8.1",
-    "next": "16.3.6",
-    "payload": "3.90.2",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
-    "sharp": "0.35.4"
+    "@payloadcms/db-postgres": "3.89.0",
+    "@payloadcms/db-sqlite": "3.89.0",
+    "@payloadcms/next": "3.89.0",
+    "@payloadcms/richtext-lexical": "3.89.0",
+    "@payloadcms/storage-vercel-blob": "3.89.0",
+    "@payloadcms/translations": "3.89.0",
+    "graphql": "^16.11.0",
+    "next": "16.3.5",
+    "payload": "3.89.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sharp": "^0.35.4"
   },
   "devDependencies": {
-    "@types/node": "24.12.3",
-    "@types/react": "19.2.14",
-    "@types/react-dom": "19.2.3",
-    "tsx": "^4.23.15",
-    "typescript": "6.0.3"
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "cheerio": "^1.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "overrides": {
+    "dompurify": "^3.4.13"
   },
   "engines": {
-    "node": ">=20.9.0"
+    "node": ">=22.0.0"
   }
 }

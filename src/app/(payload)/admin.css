@@ -1,0 +1,121 @@
+/*
+ * Identidade visual do Thiago Barreto no painel: grafite e azul, as cores do site.
+ * Fica fora das cascade layers do Payload (`@layer payload-default, payload`),
+ * então estas regras prevalecem sem precisar de `!important`.
+ */
+
+:root {
+  --tb-ink: #1d1d1f;
+  --tb-ink-deep: #000000;
+  --tb-accent: #0071e3;
+  --tb-accent-dark: #0058b0;
+  --tb-hint-bg: rgba(29, 29, 31, 0.08);
+  --tb-hint-text: #4a5464;
+}
+
+[data-theme='dark'] {
+  --tb-hint-bg: rgba(255, 255, 255, 0.1);
+  --tb-hint-text: #b6bcc6;
+}
+
+/* ---------- Marca ---------- */
+
+.tb-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tb-brand__lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tb-brand__dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: var(--tb-accent);
+  box-shadow: 0 0 0.75rem rgba(0, 113, 227, 0.45);
+}
+
+.tb-brand__word {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--theme-elevation-1000);
+}
+
+.tb-brand__caption {
+  font-size: 0.8125rem;
+  letter-spacing: 0.01em;
+  color: var(--theme-elevation-500);
+}
+
+/* O slot do ícone é pequeno e quadrado: acompanha o tamanho que o Payload reservar. */
+.tb-brand__icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 22%;
+}
+
+/* ---------- Login ---------- */
+
+.template-minimal .tb-brand {
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Ações primárias ---------- */
+
+.btn--style-primary .btn__content,
+.btn--style-primary {
+  --color: var(--tb-ink);
+}
+
+[data-theme='light'] .btn--style-primary {
+  background-color: var(--tb-ink);
+  border-color: var(--tb-ink);
+  color: #fff;
+}
+
+[data-theme='light'] .btn--style-primary:not(.btn--disabled):hover {
+  background-color: var(--tb-ink-deep);
+  border-color: var(--tb-ink-deep);
+}
+
+/* Foco visível na cor de destaque da marca, preservando o contorno de acessibilidade. */
+.template-minimal input:focus-visible,
+.template-minimal button:focus-visible,
+.field-type input:focus-visible,
+.field-type textarea:focus-visible {
+  outline: 2px solid var(--tb-accent);
+  outline-offset: 2px;
+}
+
+/* ---------- Listas de conteúdo ---------- */
+
+/* Deixa as linhas recolhíveis (seções, listas dos cases) respirarem. */
+.array-field__row-header,
+.collapsible__header {
+  min-height: 2.5rem;
+}
+
+.array-field__draggable-bar .collapsible__toggle-wrap {
+  min-width: 0;
+}
+
+/* Campos de referência técnica (endereço do case, imagem original): continuam acessíveis, sem competir com o conteúdo. */
+.tb-technical-field label,
+.tb-technical-field .field-description {
+  opacity: 0.75;
+}
+
+.tb-technical-field input:read-only {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.8125rem;
+  opacity: 0.75;
+}
