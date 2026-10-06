@@ -19,7 +19,8 @@
     "test:html": "node scripts/verify-html.mjs",
     "create-admin": "node --env-file=.env --import tsx scripts/create-admin.ts",
     "vercel-build": "node --import tsx scripts/prepare.ts && next build --webpack",
-    "prepare:db": "node --env-file=.env --import tsx scripts/prepare.ts"
+    "prepare:db": "node --env-file=.env --import tsx scripts/prepare.ts",
+    "seo:report": "node --env-file=.env --import tsx scripts/seo-report.ts"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "3.89.0",

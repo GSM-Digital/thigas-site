@@ -55,13 +55,25 @@ test('every client site opened in the live project window is allowed to be frame
   for (const host of hosts) assert.ok(PORTFOLIO_ORIGINS.includes(host), `${host} falta em PORTFOLIO_ORIGINS (src/lib/csp.ts)`)
 })
 
-test('the SEO defaults fit what Google shows (title up to 65 characters with the name, description up to 160)', () => {
+test('the SEO defaults fit what Google shows (title up to 60 characters with the name, description from 120 to 156)', () => {
   const source = read('src/cms/seo-defaults.ts')
-  const titles = [...source.matchAll(/title: '([^']+)'/g)].map((match) => match[1])
-  const descriptions = [...source.matchAll(/description: '([^']+)'/g)].map((match) => match[1])
-  assert.ok(titles.length >= 2 && descriptions.length >= 2)
-  for (const title of titles) assert.ok(`Thiago Barreto | ${title}`.length <= 65 && title.length >= 20, title)
-  for (const description of descriptions) assert.ok(description.length >= 100 && description.length <= 160, `${description.length}: ${description}`)
+  const current = source.slice(source.indexOf('export const PAGE_SEO'), source.indexOf('export const POST_TEXT'))
+  const titles = [...current.matchAll(/title: '([^']+)'/g)].map((match) => match[1])
+  const descriptions = [...current.matchAll(/description: '([^']+)'/g)].map((match) => match[1])
+  const keyphrases = [...current.matchAll(/keyphrase: '([^']+)'/g)].map((match) => match[1])
+  assert.equal(titles.length, 11) // 5 páginas + 6 artigos
+  assert.equal(descriptions.length, 11)
+  assert.equal(new Set(keyphrases).size, 11, 'frase-chave repetida: duas páginas disputariam a mesma busca')
+  for (const title of titles) assert.ok(`${title} | Thiago Barreto`.length <= 60 && `${title} | Thiago Barreto`.length >= 30, title)
+  for (const description of descriptions) assert.ok(description.length >= 120 && description.length <= 156, `${description.length}: ${description}`)
+  for (const phrase of keyphrases) assert.ok(phrase.split(' ').filter((word) => word.length > 3).length <= 4, phrase)
+})
+
+test('every article has an opening and a closing sentence that cite its keyphrase', () => {
+  const source = read('src/cms/seo-defaults.ts')
+  const text = source.slice(source.indexOf('export const POST_TEXT'), source.indexOf('/** Imagens de compartilhamento'))
+  assert.equal([...text.matchAll(/intro: '/g)].length, 6)
+  assert.equal([...text.matchAll(/outro: '/g)].length, 6)
 })
 
 test('the site ships sitemap, robots, llms.txt (and llm.txt) and keeps the hero title server-rendered', () => {

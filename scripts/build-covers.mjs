@@ -3,7 +3,8 @@ import path from 'node:path'
 import sharp from 'sharp'
 
 /**
- * Gera as capas dos artigos (1600×900, WebP) em public/img/blog/capas/<slug>.webp.
+ * Gera as capas dos artigos (1600×900, WebP) em public/img/blog/capas/<slug>.webp e as imagens de compartilhamento das páginas
+ * (1200×630) em public/img/compartilhar/<página>.webp.
  * São ilustrações futuristas feitas em código (SVG → WebP), na paleta do site: azul #0292F2, grafite e o brilho do ponto da
  * marca. Cada artigo tem uma cena própria ligada ao tema, com o mesmo sistema visual: fundo escuro com grade em perspectiva,
  * vidro translúcido, luz azul e partículas. Sem texto na imagem, então nada precisa ser traduzido nem refeito ao editar o título.
@@ -12,6 +13,7 @@ import sharp from 'sharp'
  */
 const root = path.resolve(import.meta.dirname, '..')
 const out = path.join(root, 'public/img/blog/capas')
+const outShare = path.join(root, 'public/img/compartilhar')
 const W = 1600, H = 900
 const BLUE = '#0292F2', SKY = '#6CB8F7', ICE = '#B8E2FF', CYAN = '#4FD8FF', VIOLET = '#7659D5', ROSE = '#FF5C7A'
 
@@ -157,7 +159,7 @@ function sceneProcess() {
 }
 
 /** 7 erros ao contratar: um escudo de vidro com a verificação, cercado por sete pontos de atenção (um deles em alerta). */
-function sceneErrors() {
+function sceneErrors(alert = true) {
   const cx = 800, cy = 440
   const shield = `M${cx} ${cy - 210}C${cx + 70} ${cy - 160} ${cx + 150} ${cy - 150} ${cx + 190} ${cy - 150}V${cy + 10}C${cx + 190} ${cy + 130} ${cx + 100} ${cy + 200} ${cx} ${cy + 240}C${cx - 100} ${cy + 200} ${cx - 190} ${cy + 130} ${cx - 190} ${cy + 10}V${cy - 150}C${cx - 150} ${cy - 150} ${cx - 70} ${cy - 160} ${cx} ${cy - 210}Z`
   const ring = Array.from({ length: 7 }, (_, i) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / 7; return [cx + Math.cos(a) * 340, cy + Math.sin(a) * 240] })
@@ -168,7 +170,7 @@ function sceneErrors() {
     <path d="M${cx} ${cy - 160}C${cx + 56} ${cy - 124} ${cx + 118} ${cy - 118} ${cx + 144} ${cy - 118}V${cy + 6}C${cx + 144} ${cy + 100} ${cx + 76} ${cy + 156} ${cx} ${cy + 186}" fill="none" stroke="#fff" stroke-opacity="0.12" stroke-width="1.6"/>
     <path d="M${cx - 80} ${cy + 6}L${cx - 22} ${cy + 66}L${cx + 88} ${cy - 62}" fill="none" stroke="${BLUE}" stroke-opacity="0.55" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" filter="url(#b8)"/>
     <path d="M${cx - 80} ${cy + 6}L${cx - 22} ${cy + 66}L${cx + 88} ${cy - 62}" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
-    ${ring.map(([x, y], i) => i === 1
+    ${ring.map(([x, y], i) => alert && i === 1
       ? `<circle cx="${f(x)}" cy="${f(y)}" r="46" fill="${ROSE}" opacity="0.4" filter="url(#b20)"/><circle cx="${f(x)}" cy="${f(y)}" r="22" fill="#2A0A18" stroke="${ROSE}" stroke-width="2.6"/><path d="M${f(x - 8)} ${f(y - 8)}L${f(x + 8)} ${f(y + 8)}M${f(x + 8)} ${f(y - 8)}L${f(x - 8)} ${f(y + 8)}" stroke="${ROSE}" stroke-width="3.4" stroke-linecap="round"/>`
       : `<circle cx="${f(x)}" cy="${f(y)}" r="40" fill="${BLUE}" opacity="0.22" filter="url(#b20)"/><circle cx="${f(x)}" cy="${f(y)}" r="19" fill="url(#glass)" stroke="url(#edge)" stroke-width="2"/><circle cx="${f(x)}" cy="${f(y)}" r="6" fill="${ICE}"/>`).join('')}`
 }
@@ -196,6 +198,33 @@ function sceneLive() {
     <g transform="translate(${x + 720} ${y + 70})"><circle r="26" fill="none" stroke="${ICE}" stroke-opacity="0.6" stroke-width="1.6"/><circle r="44" fill="none" stroke="${ICE}" stroke-opacity="0.25" stroke-width="1.4"/></g>`
 }
 
+
+/** Páginas e termos: documentos de vidro empilhados, com um selo de verificação. */
+function sceneDocs(check = false) {
+  const card = (x, y, rot, op, front) => `<g transform="translate(${x} ${y}) rotate(${rot})" opacity="${op}">
+      <rect width="520" height="340" rx="28" fill="url(#glass)" stroke="url(#edge)" stroke-width="1.8"/>
+      <rect x="36" y="38" width="${front ? 250 : 190}" height="18" rx="9" fill="${front ? '#fff' : ICE}" opacity="${front ? 0.9 : 0.5}"/>
+      <rect x="36" y="82" width="300" height="10" rx="5" fill="#fff" opacity="0.25"/><rect x="36" y="106" width="250" height="10" rx="5" fill="#fff" opacity="0.18"/>
+      <rect x="36" y="150" width="448" height="140" rx="18" fill="${front ? BLUE : '#fff'}" opacity="${front ? 0.35 : 0.07}"/>
+      ${front ? `<path d="M60 262C140 190 200 250 270 206S400 190 460 168" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>` : ''}
+    </g>`
+  return `<g transform="translate(0 70)">${glow('<rect x="540" y="300" width="520" height="340" rx="28" fill="' + BLUE + '"/>')}
+    ${card(300, 130, -10, 0.55, false)}${card(780, 150, 9, 0.7, false)}${card(540, 300, 0, 1, true)}
+    ${check ? `<g transform="translate(1068 300)"><circle r="56" fill="${BLUE}" opacity="0.5" filter="url(#b20)"/><circle r="40" fill="#06142E" stroke="url(#edge)" stroke-width="2.4"/><path d="M-16 2L-4 14L18 -12" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>` : ''}
+    ${[[400, 640, 5], [1190, 560, 6, CYAN], [270, 360, 4], [1280, 330, 5, VIOLET]].map(([x, y, r, c]) => node(x, y, r, c)).join('')}</g>`
+}
+
+/** Cookies: um biscoito de vidro com gotas de chocolate azuis e uma mordida. */
+function sceneCookie() {
+  const chips = [[700, 380, 22], [840, 330, 16], [760, 500, 20], [900, 520, 18], [650, 470, 14], [820, 420, 12]]
+  return `${glow('<circle cx="800" cy="450" r="200" fill="' + BLUE + '"/>')}
+    <mask id="bite"><rect width="1600" height="900" fill="#fff"/><circle cx="968" cy="318" r="86" fill="#000"/><circle cx="1010" cy="400" r="48" fill="#000"/></mask>
+    <g mask="url(#bite)"><circle cx="800" cy="450" r="210" fill="url(#glass)" stroke="url(#edge)" stroke-width="2.4"/><circle cx="800" cy="450" r="170" fill="none" stroke="${ICE}" stroke-opacity="0.25" stroke-width="1.4" stroke-dasharray="3 9"/>
+      ${chips.map(([x, y, r]) => `<ellipse cx="${x}" cy="${y}" rx="${r}" ry="${f(r * 0.78)}" fill="#06142E" stroke="${SKY}" stroke-opacity="0.8" stroke-width="1.6"/><ellipse cx="${x - r * 0.25}" cy="${y - r * 0.25}" rx="${f(r * 0.3)}" ry="${f(r * 0.2)}" fill="#fff" opacity="0.55"/>`).join('')}</g>
+    <ellipse cx="800" cy="450" rx="420" ry="120" fill="none" stroke="${SKY}" stroke-opacity="0.35" stroke-width="1.3" stroke-dasharray="2 10" transform="rotate(-12 800 450)"/>
+    ${[[1130, 300, 6], [470, 560, 5, CYAN], [1060, 620, 4, VIOLET], [520, 300, 4]].map(([x, y, r, c]) => node(x, y, r, c)).join('')}`
+}
+
 const COVERS = [
   { slug: 'por-que-ter-um-site-profissional', seed: 11, tint: BLUE, scene: sceneSite },
   { slug: 'como-escolher-web-designer', seed: 23, tint: VIOLET, scene: sceneDesign },
@@ -205,8 +234,17 @@ const COVERS = [
   { slug: 'o-que-fazer-depois-de-publicar-site', seed: 67, tint: CYAN, scene: sceneLive },
 ]
 
-export const svgOf = (cover) =>
-  `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${defs(cover.tint)}${backdrop(cover.seed, cover.tint)}${cover.scene()}${finish()}</svg>`
+/** Imagens de compartilhamento (WhatsApp, LinkedIn, Facebook, Google): 1200×630, uma por página. */
+const SHARES = [
+  { slug: 'index', seed: 71, tint: BLUE, scene: () => sceneSite() },
+  { slug: 'blog', seed: 83, tint: CYAN, scene: () => sceneDocs(false) },
+  { slug: 'privacidade', seed: 97, tint: VIOLET, scene: () => sceneErrors(false) },
+  { slug: 'termos', seed: 101, tint: BLUE, scene: () => sceneDocs(true) },
+  { slug: 'cookies', seed: 113, tint: CYAN, scene: () => sceneCookie() },
+]
+
+export const svgOf = (cover, size = [W, H]) =>
+  `<svg xmlns="http://www.w3.org/2000/svg" width="${size[0]}" height="${size[1]}" viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid slice">${defs(cover.tint)}${backdrop(cover.seed, cover.tint)}${cover.scene()}${finish()}</svg>`
 
 if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith('build-covers.mjs')) {
   const only = process.argv.slice(2).filter((arg) => !arg.startsWith('--'))
@@ -219,5 +257,11 @@ if (import.meta.url === `file://${process.argv[1]}` || process.argv[1]?.endsWith
     if (debug) fs.writeFileSync(path.join(root, 'test-results', `${cover.slug}.svg`), svg)
     const info = await sharp(Buffer.from(svg), { density: 72 }).webp({ quality: 84, effort: 6 }).toFile(path.join(out, `${cover.slug}.webp`))
     console.log(`${cover.slug}.webp  ${info.width}×${info.height}  ${(info.size / 1024).toFixed(0)} KB`)
+  }
+  fs.mkdirSync(outShare, { recursive: true })
+  for (const share of SHARES) {
+    if (only.length && !only.includes(`compartilhar/${share.slug}`)) continue
+    const info = await sharp(Buffer.from(svgOf(share, [1200, 630])), { density: 72 }).webp({ quality: 84, effort: 6 }).toFile(path.join(outShare, `${share.slug}.webp`))
+    console.log(`compartilhar/${share.slug}.webp  ${info.width}×${info.height}  ${(info.size / 1024).toFixed(0)} KB`)
   }
 }
