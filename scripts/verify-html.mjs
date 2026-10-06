@@ -50,7 +50,16 @@ const ZONES = {
 const strip = ($, file) => {
   for (const selector of ZONES[file] || []) $(selector).remove()
   $('div[hidden]').filter((_, el) => !Object.keys(el.attribs).some((name) => name !== 'hidden')).remove()
-  if (file === 'index') $('#blog-track').removeAttr('aria-label')
+  if (file === 'index') {
+    $('#blog-track').removeAttr('aria-label')
+    // Ajustes de propósito (veja scripts/import-prototype.mjs e Template): o título do herói já vem dividido em palavras
+    // (o texto é o mesmo), os textos das abas da vitrine não nascem `hidden` e a lista de etapas deixou de ser role="tabpanel".
+    const title = $('#hero-title')
+    if (!title.find('.sr-only').length) title.find('br').replaceWith(' ')
+    title.text(($('#hero-title > .sr-only').text() || title.text()).replace(/\s+/g, ' ').trim()).removeAttr('data-split')
+    $('.captions .caption[hidden]').removeAttr('hidden')
+    $('ol.steps[role="tabpanel"]').removeAttr('role')
+  }
 }
 
 const failures = []

@@ -85,6 +85,13 @@ const adapt = {
   index($) {
     $('.blog-status').remove()
     $('#blog-track').empty().attr({ 'data-cms-slot': 'cards', 'aria-label': 'Artigos recentes' })
+    // Uma lista (<ol>) não pode ser role="tabpanel": os <li> deixavam de ser itens de lista para os leitores de tela e o
+    // Lighthouse reprovava. A lista segue ligada à aba por id e aria-labelledby; o main.js continua alternando o `hidden`.
+    $('ol.steps[role="tabpanel"]').removeAttr('role')
+    // Os textos das abas da vitrine chegavam `hidden` e o main.js os mostrava no carregamento: o bloco crescia até a altura do
+    // maior texto e empurrava o resto da página (CLS 0,2 no celular). Sem `hidden` o espaço já nasce no tamanho final; os
+    // inativos continuam invisíveis pelo CSS (`.caption:not(.is-active)`), como o main.js deixa depois.
+    $('.captions .caption[hidden]').removeAttr('hidden')
   },
   blog($) {
     $('.ed-demo, .ed-endnote').remove()

@@ -7,6 +7,6 @@ export async function generateMetadata() {
   const [page, settings] = await Promise.all([getPageContent('blog'), getSettings()])
   const title = pageTitle(page?.title, settings.siteName || '', 'blog')
   const description = page?.description || settings.defaultDescription || undefined
-  return { title, description, openGraph: openGraph(settings, { title, description, url: '/blog', image: page?.featuredImage }), alternates: { canonical: '/blog' } }
+  return { title, description, openGraph: openGraph(settings, { title, description, url: '/blog', image: page?.featuredImage }), alternates: { canonical: '/blog', languages: { 'pt-BR': '/blog' } } }
 }
 export default function Blog() { return <SitePage slug="blog" /> }

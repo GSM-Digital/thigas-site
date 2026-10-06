@@ -1,0 +1,17 @@
+/*
+ * Ajustes do site sobre o CSS do protótipo (public/css/styles.css, que fica como veio). Mobile first: a base vale para o
+ * celular e tudo o que muda em telas maiores entra com min-width, em em (não muda com o tamanho da fonte do site).
+ * Este arquivo entra pelo Next, antes do styles.css; por isso as regras abaixo repetem `:root` para ganhar em
+ * especificidade em vez de depender da ordem.
+ */
+
+/* 1 · Contraste (WCAG AA, 4,5:1): o PageSpeed apontava o texto azul das etiquetas e o número da etapa ativa do processo */
+:root:not([data-theme=dark]) .pj-tags .pj-type{color:#005FBE}
+:root .step.is-on .step-n{background:var(--color-blue-active)}
+
+/* 2 · Telas largas, TVs e monitores 2K/4K: o layout todo é em rem, então crescer a fonte-base amplia o site inteiro na
+   mesma proporção (container, títulos, cartões, janelas) em vez de deixar 70 rem pequenos no meio de uma tela enorme. */
+@media(min-width:100em){html{font-size:112.5%}}    /* ≥ 1600 px · notebook grande / widescreen */
+@media(min-width:120em){html{font-size:125%}}      /* ≥ 1920 px · Full HD */
+@media(min-width:160em){html{font-size:156.25%}}   /* ≥ 2560 px · QHD / ultrawide */
+@media(min-width:240em){html{font-size:250%}}      /* ≥ 3840 px · 4K / TV */

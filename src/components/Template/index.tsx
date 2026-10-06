@@ -103,12 +103,38 @@ export function Template({ nodes, content, slots = {}, emptySlots = [], offHome,
     }).join('')
   }
 
+  /**
+   * Título do herói palavra por palavra. É o mesmo desmembramento que o main.js faria no navegador (cada palavra num
+   * `.w` com `--i`, a frase em destaque inteira num `.tone.w`, texto íntegro para leitor de tela), mas já vem pronto do
+   * servidor: o título aparece sem esperar o JavaScript (LCP) e não muda de tamanho depois (CLS). `data-split` faz o
+   * main.js pular essa etapa.
+   */
+  function heroTitle(node: TemplateNode, attrs: Record<string, unknown>): ReactNode {
+    let order = 0
+    const plain = (list?: TemplateNode[]): string => (list || []).map((child) => child.tag === 'br' ? ' ' : child.tag ? plain(child.children) : textOf(child) || '').join('')
+    const split = (child: TemplateNode, at: string): ReactNode => {
+      if (!child.tag) {
+        return (textOf(child) || '').split(/(\s+)/).filter(Boolean).map((part, index) => /^\s+$/.test(part)
+          ? ' '
+          : <span className="w" key={`${at}.${index}`} style={{ '--i': order++ } as CSSProperties}>{part}</span>)
+      }
+      if (child.tag === 'br') return <br key={at} />
+      if (classOf(child).includes('tone')) return <span className="tone w" key={at} style={{ '--i': order++ } as CSSProperties}>{plain(child.children)}</span>
+      return createElement(child.tag, { key: at, ...attributes(child, child.tag) }, (child.children || []).map((inner, index) => split(inner, `${at}.${index}`)))
+    }
+    const words = (node.children || []).map((child, index) => split(child, String(index)))
+    return createElement('h1', { ...attrs, 'data-split': '1' }, <span className="sr-only">{plain(node.children).replace(/\s+/g, ' ').trim()}</span>, <span aria-hidden="true">{words}</span>)
+  }
+
   function render(node: TemplateNode, key: string): ReactNode {
     if (node.managed) return slots[node.managed] ?? null
     if (!node.tag) return textOf(node)
     let tag = node.tag
     const attrs: Record<string, unknown> = { key, ...attributes(node, tag) }
     if (node.slot) return createElement(tag, attrs, slots[node.slot])
+    if (tag === 'h1' && node.attrs?.id === 'hero-title') return heroTitle(node, attrs)
+    // O herói ganha a classe `is-in` antes da hidratação (script em SitePage): o React não deve estranhar essa diferença.
+    if (tag === 'section' && classOf(node).includes('hero')) attrs.suppressHydrationWarning = true
 
     // Fora da página inicial, os botões que abrem janelas de simulação viram links para a seção de soluções.
     if (offHome && tag === 'button' && node.attrs?.commandfor) {

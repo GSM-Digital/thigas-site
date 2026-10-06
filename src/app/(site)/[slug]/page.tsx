@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: Args) {
   const [page, settings] = await Promise.all([getPageContent(slug), getSettings()])
   const title = pageTitle(page?.title, settings.siteName || '', slug)
   const description = page?.description || settings.defaultDescription || undefined
-  return { title, description, openGraph: openGraph(settings, { title, description, url: `/${slug}`, image: page?.featuredImage }), alternates: { canonical: `/${slug}` } }
+  return { title, description, openGraph: openGraph(settings, { title, description, url: `/${slug}`, image: page?.featuredImage }), alternates: { canonical: `/${slug}`, languages: { 'pt-BR': `/${slug}` } } }
 }
 export default async function Page({ params }: Args) {
   const { slug } = await params

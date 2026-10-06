@@ -34,7 +34,13 @@ Para gerar uma chave: `node -e "console.log(require('crypto').randomBytes(48).to
 | `DATABASE_URL` | Define o banco. `postgres://…` usa Postgres (Vercel/Neon); qualquer outro valor usa SQLite: local `file:./.data/thiago-barreto.db`, no Coolify `file:/app/.data/thiago-barreto.db`. |
 | `BLOB_READ_WRITE_TOKEN` | Só na Vercel: com ele, as imagens enviadas pelo painel vão para o Vercel Blob. Sem ele, ficam na pasta `media/`. |
 | `SERVER_URL` | Endereço público do site, sem barra no fim (canônico, Open Graph, sitemap). |
-| `SITE_ENV` | `preview` (padrão): `noindex` nas páginas e no cabeçalho `X-Robots-Tag`, `robots.txt` bloqueado e sitemap vazio. `production` libera a indexação — use só no domínio definitivo. |
+| `SITE_ENV` | `preview` (padrão): `noindex` nas páginas e no cabeçalho `X-Robots-Tag`, `robots.txt` bloqueado e sitemap vazio. `production` libera a indexação **e liga a medição** (Clarity, GTM…) — use só no domínio definitivo. |
+| `CLARITY_ID` | Projeto do Microsoft Clarity. Padrão: `yt9tl6z48z` (o do site). Só carrega com `SITE_ENV=production`. |
+| `GTM_ID` | Google Tag Manager (`GTM-XXXXXXX`). GA4 e Google Ads ficam como tags dentro do GTM. Vazio = não carrega. |
+| `GA_ID` / `GOOGLE_ADS_ID` | `G-XXXXXXXXXX` e `AW-XXXXXXXXX`, para carregar o gtag.js direto **sem** GTM. Se `GTM_ID` existir, os dois são ignorados. |
+| `WEBHOOK_URL` | Um ou mais endereços (separados por vírgula) que o site pode chamar com `fetch`/formulário. Só a origem entra na CSP (`connect-src` e `form-action`). Hoje o formulário abre o WhatsApp; a variável deixa o caminho liberado para quando houver webhook. |
+| `CSP_EXTRA_CONNECT` / `CSP_EXTRA_FRAME` | Outras origens a liberar em `connect-src` e `frame-src` sem mexer no código. |
+| `CSP_MODE` | `report-only` só registra violações no console, sem bloquear. Útil para testar um novo domínio antes de liberar de vez. |
 
 `.env`, `.data/`, `media/` e `node_modules/` ficam fora do git.
 
@@ -131,6 +137,38 @@ npm run test:cms  -- http://localhost:3000   # painel de ponta a ponta; cria e r
 
 Comandos do Payload: `npm run generate:types`, `npm run generate:importmap` (rode depois de mudar campos ou componentes do painel).
 
+## Desempenho, SEO e segurança
+
+**Desempenho (PageSpeed/Lighthouse, celular simulado)**: de 77 para 93, e 99 → 100 no desktop; acessibilidade 100, SEO 100, boas práticas 100.
+
+- **Título do herói** (`Template`): já chega dividido em palavras do servidor (o mesmo resultado do `main.js`, que pula a etapa por causa do `data-split`). Antes ele ficava invisível até o JavaScript carregar.
+- **Revelar do herói** (`SitePage`): um script de uma linha adiciona `is-in` ao `.hero` depois do primeiro quadro pintado, sem esperar a hidratação. O fade-in e a animação continuam os do protótipo.
+- **Layout shift 0,2 → 0**: os textos das abas da vitrine nasciam `hidden` e o `main.js` os mostrava no carregamento, empurrando a página. O importador (`adapt.index`) tira o `hidden`; os inativos seguem invisíveis pelo CSS.
+- **Redirecionamento extra de ~800 ms**: o Payload manda `Critical-CH: Sec-CH-Prefers-Color-Scheme` em todas as rotas (tema do painel) e o Chrome repete a primeira visita. O `next.config.mjs` remove esses cabeçalhos.
+- **Cache** (`next.config.mjs`): CSS e JS entram com `?v=<versão do build>` (`src/lib/assets.ts`, a versão é o commit na Vercel) e ficam um ano em cache; fontes um ano; imagens 30 dias; simulações 1 dia. Cada deploy troca a versão.
+- **CSS do Next inline** (`experimental.inlineCss`) e `fetchpriority="high"` no `styles.css`.
+- **Medição fora do caminho crítico** (`src/components/Analytics`): Clarity e GTM entram na primeira interação ou depois de uma pausa (GTM/gtag 3,5 s; Clarity 6 s) contada do fim do carregamento. Isso mantém boas práticas e LCP no PageSpeed. Quem rola ou toca na página é medido desde a primeira ação; uma visita que não interage e sai antes da pausa não é medida.
+- **Contraste** (`src/components/Document/enhance.css`): etiquetas azuis de projetos e número da etapa ativa do processo agora passam de 4,5:1.
+- **Semântica**: a lista de etapas do processo deixou de ser `role="tabpanel"` (os `<li>` perdiam o papel de item de lista). Continua ligada à aba por `id` e `aria-labelledby`.
+
+**Responsivo (mobile first)**: o CSS do protótipo já era `min-width`; `enhance.css` acrescenta só o que faltava, também com `min-width`: acima de 1600 px a fonte-base sobe (112,5 % → 125 % em 1920 px → 156 % em 2560 px → 250 % em 3840 px). Como o layout é todo em `rem`, o site cresce inteiro e deixa de ficar pequeno em widescreen e TV. Conferido sem rolagem horizontal em 320, 375, 768, 1024, 1440, 1920, 2560 e 3840 px.
+
+**SEO / AEO / GEO**
+- Títulos e descrições com as palavras-chave do negócio (criação de sites, landing pages, e-commerce, SEO/AEO/GEO, tráfego pago) em `src/cms/seo-defaults.ts`. São aplicados uma vez à página inicial e ao blog **só se ainda estiverem com o texto original do protótipo**; o que foi editado no painel não é tocado.
+- Dados estruturados (`src/lib/seo.ts`): grafo schema.org com `ProfessionalService`/`Organization` (catálogo de serviços, contato, `knowsAbout`), `Person`, `WebSite`, `WebPage`, `BreadcrumbList` e, nos artigos, `BlogPosting` com `@id` ligando tudo. O telefone vem do primeiro link `wa.me` do painel.
+- `sitemap.xml` (`src/app/sitemap.ts`): páginas e posts publicados, com `lastmod`, prioridade e frequência. `robots.txt`: libera os buscadores e os rastreadores de IA (GPTBot, ClaudeBot, PerplexityBot, Google-Extended…) e bloqueia só `/gestao` e `/api`.
+- **`/llms.txt`** (e `/llm.txt`, que aponta para o mesmo) e **`/llms-full.txt`**: resumo do site, serviços, páginas, artigos e contato em Markdown para assistentes de IA, gerados do conteúdo atual do painel.
+- Canônico e `hreflang` pt-BR em todas as páginas; em produção, `max-image-preview:large` e `max-snippet:-1`.
+
+**Segurança (CSP e cabeçalhos)**: o site roda na Vercel, que **não lê `.htaccess`** (isso é do Apache). Os mesmos controles ficam em `src/proxy.ts` + `src/lib/csp.ts` (CSP) e `next.config.mjs` (cabeçalhos e cache).
+- A CSP usa `nonce` por requisição e `strict-dynamic`: só roda script do próprio site e o que ele carrega (o GTM carrega GA4, Ads e as demais tags). Não há `unsafe-inline` nem `unsafe-eval` em `script-src` (só no `next dev`).
+- Liberados: GTM, Google Analytics (GA4), Google Ads/DoubleClick, YouTube (`youtube.com` e `youtube-nocookie.com`), Microsoft Clarity, Vercel Blob (imagens), os sites de clientes da janela "ao vivo" de Projetos e o webhook (`WEBHOOK_URL`). Para outro domínio, use `CSP_EXTRA_CONNECT`/`CSP_EXTRA_FRAME`, ou adicione em `src/lib/csp.ts`.
+- `/gestao` e `/api` ficam sem a CSP (o painel do Payload injeta scripts próprios).
+- Também: `X-Frame-Options`, `frame-ancestors 'self'`, `Permissions-Policy`, `object-src 'none'`, `base-uri 'self'`. O HSTS já vem da Vercel.
+- Não há `Cross-Origin-Opener-Policy` de propósito: com ele o modo de depuração do GTM (Tag Assistant) deixa de funcionar.
+
+**Como testar**: `npm test` (inclui `tests/web.test.mjs`: CSP, webhook, domínios do portfólio, limites de SEO). Com o site em produção local (`SITE_ENV=production`, `GTM_ID=GTM-XXXX`), abra o console: uma violação aparece como "Refused to…/violates the following Content Security Policy". Lighthouse: `npx lighthouse http://localhost:3000 --preset=desktop`.
+
 ## Diferenças da referência (EQ Seguros)
 
 - **Dois bancos**: a referência usa só SQLite. Aqui `DATABASE_URL=postgres://…` troca para Postgres (Vercel), com `src/migrations/postgres` ao lado de `src/migrations/sqlite`, e o plugin do Vercel Blob guarda as imagens quando `BLOB_READ_WRITE_TOKEN` existe. O `importMap` do painel foi gerado com o Blob ativo (`BLOB_READ_WRITE_TOKEN=vercel_blob_rw_x_y npm run generate:importmap`) para incluir o envio direto do navegador; refaça assim se mudar componentes do painel.
@@ -138,7 +176,8 @@ Comandos do Payload: `npm run generate:types`, `npm run generate:importmap` (rod
 - **Páginas e cabeçalho/rodapé**: seis páginas (inicial, blog, modelo do post, privacidade, termos, cookies). Cabeçalho e rodapé vêm da inicial e valem para inicial, blog e artigos; fora da inicial, os atalhos de âncora e os botões que abrem janelas viram links para a inicial. As páginas legais têm cabeçalho e rodapé próprios dentro do conteúdo.
 - **Rotas**: o site e o blog usam grupos de rotas diferentes (`(site)` e `(editorial)`) porque a página do blog e os artigos usam `body.editorial-page`; a EQ tem um grupo só.
 - **Interações**: as da EQ foram reescritas em React; aqui os scripts originais do protótipo rodam depois da hidratação.
-- **`overrides/`**: dois arquivos diferem do protótipo de propósito — `js/blog.js` (só o carrossel; a versão do protótipo busca posts em um WordPress) e `css/editorial.css` (estilo de tabelas nos artigos).
+- **`overrides/`**: dois arquivos diferem do protótipo de propósito — `js/blog.js` (só o carrossel; a versão do protótipo busca posts em um WordPress) e `css/editorial.css` (estilo de tabelas nos artigos). O CSS novo do site (contraste, telas largas) fica em `src/components/Document/enhance.css`, sem mexer no `styles.css`.
+- **HTML da inicial**: três ajustes de propósito em relação ao protótipo (documentados em `scripts/verify-html.mjs`): título do herói já dividido em palavras, textos das abas da vitrine sem `hidden` e lista de etapas sem `role="tabpanel"`.
 - **Demonstrações do protótipo**: `blog.html` e `artigo.html` trazem cards e avisos de "layout de demonstração"; o importador os troca pelos posts reais e descarta os avisos. O título e o link da seção "Leia também" do modelo do post vêm do protótipo com dois textos ajustados (`scripts/import-prototype.mjs`, função `artigo`).
 - **Editor de posts**: acrescenta tabelas (`EXPERIMENTAL_TableFeature`), usadas por dois dos artigos.
 - **Seed do blog**: publica os seis artigos reais e importa os três cards do protótipo como rascunho (o único com texto completo é um artigo de demonstração). Os cards de exemplo usam ilustrações SVG, que a biblioteca de imagens não aceita, então ficam sem capa.
@@ -148,7 +187,9 @@ Comandos do Payload: `npm run generate:types`, `npm run generate:importmap` (rod
 
 ## Pendências
 
-- Formulário de contato: continua abrindo o WhatsApp no navegador, sem servidor, e-mail ou CRM.
+- Formulário de contato: continua abrindo o WhatsApp no navegador, sem servidor, e-mail ou CRM. A CSP já aceita um webhook (`WEBHOOK_URL`), mas não há código que o chame.
+- **GTM/GA4/Google Ads**: o código está pronto, mas falta o ID (`GTM_ID`, ou `GA_ID` e `GOOGLE_ADS_ID`) para ligar. Só o Clarity está ativo. A medição não pede consentimento (LGPD); se a política de cookies exigir, acrescente um aviso antes de ligar o GTM.
+- **LCP no celular** ~3,2 s no Lighthouse simulado (meta do Google: 2,5 s): o elemento é o parágrafo do herói, que entra com atraso de 420 ms de propósito (efeito de entrada). Reduzir esse atraso melhora o número, ao custo do efeito.
 - SMTP (recuperação de senha) e backups não estão configurados.
 - **Vercel**: o build real (`vercel-build`), o Neon e o Vercel Blob não foram testados; o Postgres foi validado com um Postgres 18 local (migração, seed, `test:html` e `test:cms` passam iguais ao SQLite) e o build foi feito com as variáveis da Vercel definidas. As imagens enviadas ao Blob só serão testadas no primeiro deploy.
 - O build do Docker não foi executado neste computador (sem Docker); a imagem foi validada apenas pelo equivalente: `output: standalone` montado como no `Dockerfile` e executado no macOS. O binário nativo do `libsql` é incluído por `outputFileTracingIncludes`; confirme no primeiro build Linux.

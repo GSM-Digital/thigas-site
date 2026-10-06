@@ -1130,8 +1130,7 @@
                               "tag": "p",
                               "attrs": {
                                 "class": "caption",
-                                "data-caption": "shop",
-                                "hidden": ""
+                                "data-caption": "shop"
                               },
                               "children": [
                                 {
@@ -1157,8 +1156,7 @@
                               "tag": "p",
                               "attrs": {
                                 "class": "caption",
-                                "data-caption": "lp",
-                                "hidden": ""
+                                "data-caption": "lp"
                               },
                               "children": [
                                 {
@@ -1184,8 +1182,7 @@
                               "tag": "p",
                               "attrs": {
                                 "class": "caption",
-                                "data-caption": "app",
-                                "hidden": ""
+                                "data-caption": "app"
                               },
                               "children": [
                                 {
@@ -8963,7 +8960,6 @@
                               "tag": "ol",
                               "attrs": {
                                 "class": "steps",
-                                "role": "tabpanel",
                                 "id": "pp-site",
                                 "aria-labelledby": "pt-site",
                                 "data-total": "24"
@@ -10153,7 +10149,6 @@
                               "tag": "ol",
                               "attrs": {
                                 "class": "steps",
-                                "role": "tabpanel",
                                 "id": "pp-shop",
                                 "aria-labelledby": "pt-shop",
                                 "data-total": "32",
@@ -11559,7 +11554,6 @@
                               "tag": "ol",
                               "attrs": {
                                 "class": "steps",
-                                "role": "tabpanel",
                                 "id": "pp-lp",
                                 "aria-labelledby": "pt-lp",
                                 "data-total": "11",

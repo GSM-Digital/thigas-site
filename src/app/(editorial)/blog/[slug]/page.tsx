@@ -5,6 +5,8 @@ import { Interactions } from '@/components/Interactions'
 import { Template } from '@/components/Template'
 import { chrome, getCMS, getPageContent, getPost, getPosts, getSettings, getSiteContent, templates, uploadURL } from '@/lib/content'
 import { coverURL, plainText, toCard } from '@/lib/blog'
+import { asset } from '@/lib/assets'
+import { siteOrigin, jsonLd, structuredData, whatsappDigits } from '@/lib/seo'
 import { openGraph } from '@/lib/share'
 import { DEFAULT_SITE_NAME, pageTitle } from '@/lib/site-title'
 
@@ -47,20 +49,31 @@ export default async function BlogPost(args: Args) {
     .slice(0, 6).map(toCard)
   const logoURL = uploadURL(settings.logo)
   const logo = logoURL ? { url: logoURL, alt: settings.siteName?.trim() || DEFAULT_SITE_NAME } : undefined
-  const origin = process.env.SERVER_URL || 'http://localhost:3000'
+  const origin = siteOrigin()
   const cover = coverURL(post)
-  const schema = JSON.stringify({
-    '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.title, description: post.excerpt || undefined,
+  const url = `/blog/${encodeURIComponent(post.slug)}`
+  const description = post.seoDescription || post.excerpt || plainText(post.content).replace(/\s+/g, ' ').trim().slice(0, 156) || undefined
+  const category = typeof post.category === 'object' && post.category ? post.category.name : undefined
+  const graph = structuredData({
+    siteName: settings.siteName, logo: logoURL, whatsapp: whatsappDigits(site), page: {
+      path: url, name: post.title, description, image: cover, published: post.publishedAt, modified: post.updatedAt,
+      crumbs: [{ name: 'Blog', path: '/blog' }, { name: post.title, path: url }],
+    },
+  })
+  graph['@graph'].push({
+    '@type': 'BlogPosting', '@id': `${origin}${url}#article`, headline: post.title, description, inLanguage: 'pt-BR',
     image: cover ? new URL(cover, origin).href : undefined, datePublished: post.publishedAt, dateModified: post.updatedAt,
-    author: { '@type': 'Person', name: post.authorName }, mainEntityOfPage: `${origin}/blog/${encodeURIComponent(post.slug)}`,
-  }).replace(/</g, '\\u003c')
+    author: { '@type': 'Person', name: post.authorName || 'Thiago Barreto', ...(!post.authorName || post.authorName === 'Thiago Barreto' ? { '@id': `${origin}/#thiago-barreto` } : {}) },
+    publisher: { '@id': `${origin}/#organization` }, mainEntityOfPage: { '@id': `${origin}${url}#webpage` }, isPartOf: { '@id': `${origin}/blog#webpage` },
+    ...(category ? { articleSection: category, keywords: category } : {}), wordCount: plainText(post.content).split(/\s+/).filter(Boolean).length,
+  })
   return <>
-    <link rel="stylesheet" href="/css/editorial.css" precedence="default" />
+    <link rel="stylesheet" href={asset('/css/editorial.css')} precedence="default" />
     <Template nodes={chrome.header} content={site} offHome current="/blog" anchors={{ '#blog': '/blog' }} logo={logo} />
     {preview && post._status !== 'published' && <div className="blog-preview-bar">Prévia do rascunho: este post ainda não está publicado.</div>}
     <Template nodes={template.body} content={page} slots={{ article: <ArticleContent post={post} />, related: related.length ? <Related posts={related} /> : null }} emptySlots={related.length ? [] : ['related']} />
     <Template nodes={chrome.footer} content={site} offHome anchors={{ '#blog': '/blog' }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schema }} />
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(graph) }} />
     <Interactions kind="article" />
   </>
 }

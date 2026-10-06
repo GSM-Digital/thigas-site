@@ -9,6 +9,7 @@ import { Users, Media, Pages, Site, Settings } from './cms/collections'
 import { Categories, Posts } from './cms/blog'
 import { seedPrototype } from './cms/seed'
 import { seedBlog } from './cms/seed-blog'
+import { applySeoDefaults } from './cms/seo-defaults'
 import { ADMIN_ROUTE } from './lib/routes'
 import { db, usingPostgres } from './db'
 
@@ -46,5 +47,6 @@ export default buildConfig({
     if (process.env.PAYLOAD_SKIP_SEED === '1') return
     await seedPrototype(payload)
     await seedBlog(payload)
+    await applySeoDefaults(payload)
   },
 })
