@@ -75,3 +75,16 @@ test('the global scripts of the measurement tags never reuse an id that becomes 
   const source = read('src/components/Analytics/Deferred.tsx') + read('src/components/Analytics/index.tsx')
   assert.doesNotMatch(source, /\bid=["'](clarity|gtm|gtag|dataLayer)["']/)
 })
+
+test('every published article has a futuristic 1600x900 cover with a description', async () => {
+  const { default: sharp } = await import('sharp')
+  const { COVER_ALT, coverFile } = await import('../src/cms/covers.ts')
+  const slugs = JSON.parse(read('src/generated/articles.json')).map((article) => article.slug)
+  assert.equal(slugs.length, 6)
+  for (const slug of slugs) {
+    assert.ok(COVER_ALT[slug] && COVER_ALT[slug].length > 40, `${slug} sem descrição da capa`)
+    const meta = await sharp(coverFile(slug)).metadata()
+    assert.deepEqual([meta.width, meta.height, meta.format], [1600, 900, 'webp'], slug)
+    assert.ok(fs.statSync(coverFile(slug)).size < 150 * 1024, `${slug} pesada demais`)
+  }
+})

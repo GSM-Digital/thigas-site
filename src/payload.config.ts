@@ -10,6 +10,7 @@ import { Categories, Posts } from './cms/blog'
 import { seedPrototype } from './cms/seed'
 import { seedBlog } from './cms/seed-blog'
 import { applySeoDefaults } from './cms/seo-defaults'
+import { applyArticleCovers } from './cms/covers'
 import { ADMIN_ROUTE } from './lib/routes'
 import { db, usingPostgres } from './db'
 
@@ -48,5 +49,6 @@ export default buildConfig({
     await seedPrototype(payload)
     await seedBlog(payload)
     await applySeoDefaults(payload)
+    await applyArticleCovers(payload)
   },
 })

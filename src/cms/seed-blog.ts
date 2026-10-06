@@ -6,6 +6,7 @@ import articlesData from '../generated/articles.json'
 import type { Article } from '../lib/types'
 import type { Post } from '../payload-types'
 import { toSlug } from './blog'
+import { COVER_ALT } from './covers'
 
 const articles = articlesData as unknown as Article[]
 type Lexical = Post['content']
@@ -58,7 +59,7 @@ export async function seedBlog(payload: Payload) {
       data: {
         title: article.title, slug: article.slug, excerpt: article.excerpt, authorName: article.author,
         category: categories.get(article.category)!, publishedAt: article.publishedAt,
-        featuredImage: await cover(`img/blog/artigos/${article.slug}.webp`, `Ilustração do artigo ${article.title}`),
+        featuredImage: COVER_ALT[article.slug] ? await cover(`img/blog/capas/${article.slug}.webp`, COVER_ALT[article.slug]) : await cover(`img/blog/artigos/${article.slug}.webp`, `Ilustração do artigo ${article.title}`),
         content: article.content as unknown as Lexical, _status: 'published',
       },
     })
