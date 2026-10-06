@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { getCMS } from '@/lib/content'
 import { siteOrigin } from '@/lib/seo'
-export const dynamic = 'force-dynamic'
+/** Gerado no build e renovado de hora em hora: responde direto do cache, sem acordar o banco (um timeout aqui reprovava o llms.txt no PageSpeed). */
+export const revalidate = 3600
 
 /** Prioridade e frequência por página: a inicial e o blog mudam mais e valem mais; as páginas legais quase nunca mudam. */
 const WEIGHT: Record<string, { priority: number; changeFrequency: 'weekly' | 'monthly' | 'yearly' }> = {

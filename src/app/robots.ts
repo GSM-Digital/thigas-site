@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { ADMIN_ROUTE } from '@/lib/routes'
 import { siteOrigin } from '@/lib/seo'
-export const dynamic = 'force-dynamic'
+/** Gerado no build e renovado de hora em hora: responde direto do cache, sem acordar o banco (um timeout aqui reprovava o llms.txt no PageSpeed). */
+export const revalidate = 3600
 
 /** Buscadores e assistentes de IA que o site quer que leiam e citem o conteúdo (GEO). Só valem em produção. */
 const AI_CRAWLERS = [
