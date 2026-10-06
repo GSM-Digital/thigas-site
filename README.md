@@ -148,6 +148,7 @@ Comandos do Payload: `npm run generate:types`, `npm run generate:importmap` (rod
 - **Cache** (`next.config.mjs`): CSS e JS entram com `?v=<versão do build>` (`src/lib/assets.ts`, a versão é o commit na Vercel) e ficam um ano em cache; fontes um ano; imagens 30 dias; simulações 1 dia. Cada deploy troca a versão.
 - **CSS do Next inline** (`experimental.inlineCss`) e `fetchpriority="high"` no `styles.css`.
 - **Medição fora do caminho crítico** (`src/components/Analytics`): Clarity e GTM entram na primeira interação ou depois de uma pausa (GTM/gtag 3,5 s; Clarity 6 s) contada do fim do carregamento. Isso mantém boas práticas e LCP no PageSpeed. Quem rola ou toca na página é medido desde a primeira ação; uma visita que não interage e sai antes da pausa não é medida.
+- **Cabeçalho que some ao rolar** (`src/components/HeaderScroll`): desce a página, o cabeçalho some com deslocamento e esmaecimento; sobe, ele volta. Fica visível perto do topo, com o menu do celular aberto e com foco/mouse nele. Respeita `prefers-reduced-motion`.
 - **Contraste** (`src/components/Document/enhance.css`): etiquetas azuis de projetos e número da etapa ativa do processo agora passam de 4,5:1.
 - **Semântica**: a lista de etapas do processo deixou de ser `role="tabpanel"` (os `<li>` perdiam o papel de item de lista). Continua ligada à aba por `id` e `aria-labelledby`.
 

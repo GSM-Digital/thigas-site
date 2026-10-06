@@ -2,6 +2,7 @@ import { headers } from 'next/headers'
 import { notFound } from 'next/navigation'
 import { ArticleContent, Related } from '@/components/Blog/Article'
 import { Interactions } from '@/components/Interactions'
+import { HeaderScroll } from '@/components/HeaderScroll'
 import { Template } from '@/components/Template'
 import { chrome, getCMS, getPageContent, getPost, getPosts, getSettings, getSiteContent, templates, uploadURL } from '@/lib/content'
 import { coverURL, plainText, toCard } from '@/lib/blog'
@@ -74,6 +75,7 @@ export default async function BlogPost(args: Args) {
     <Template nodes={template.body} content={page} slots={{ article: <ArticleContent post={post} />, related: related.length ? <Related posts={related} /> : null }} emptySlots={related.length ? [] : ['related']} />
     <Template nodes={chrome.footer} content={site} offHome anchors={{ '#blog': '/blog' }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(graph) }} />
+    <HeaderScroll />
     <Interactions kind="article" />
   </>
 }

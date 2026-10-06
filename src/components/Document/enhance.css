@@ -15,3 +15,9 @@
 @media(min-width:120em){html{font-size:125%}}      /* ≥ 1920 px · Full HD */
 @media(min-width:160em){html{font-size:156.25%}}   /* ≥ 2560 px · QHD / ultrawide */
 @media(min-width:240em){html{font-size:250%}}      /* ≥ 3840 px · 4K / TV */
+
+/* 3 · Cabeçalho que some ao rolar para baixo e volta ao rolar para cima (src/components/HeaderScroll). O fundo de vidro e a
+   sombra saem junto: o deslocamento passa da altura do cabeçalho para a sombra não aparecer na borda da tela. */
+:root .topbar{transition:transform .45s cubic-bezier(.16,1,.3,1),opacity .35s ease,box-shadow var(--dur-base) ease,border-color var(--dur-base) ease;will-change:transform}
+:root .topbar.is-hidden{transform:translateY(calc(-100% - 1.5rem));opacity:0;pointer-events:none}
+@media(prefers-reduced-motion:reduce){:root .topbar{transition:none}}

@@ -7,6 +7,7 @@ import { jsonLd, structuredData, whatsappDigits } from '@/lib/seo'
 import { DEFAULT_SITE_NAME } from '@/lib/site-title'
 import { Template } from '../Template'
 import { Interactions } from '../Interactions'
+import { HeaderScroll } from '../HeaderScroll'
 import { BlogListing, PostCards } from '../Blog'
 import { Featured } from '../Blog/Article'
 
@@ -52,6 +53,7 @@ export async function SitePage({ slug }: { slug: string }) {
         crumbs: [{ name: page.title, path: `/${slug}` }],
       },
     })) }} />
+    <HeaderScroll />
     <Interactions kind={KIND[slug] || 'legal'} />
   </>
 }
